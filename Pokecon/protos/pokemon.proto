@@ -14,11 +14,11 @@ message RequestEnvelop {
 
   message Requests {
     int32 type = 1;
-    Unknown3 message = 2;
+    bytes message = 2;
   }
 
   message MessageSingleString {
-    bytes bytes = 1;
+    string f1 = 1;
   }
 
   message MessageSingleInt {
@@ -33,8 +33,8 @@ message RequestEnvelop {
   message MessageQuad {
     bytes f1 = 1;
     bytes f2 = 2;
-    fixed64 lat = 3;
-    fixed64 long = 4;
+    sfixed64 lat = 3;
+    sfixed64 long = 4;
   }
 
   message Wat {
