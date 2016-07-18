@@ -21,50 +21,120 @@ public static partial class PokemonReflection {
   static PokemonReflection() {
     byte[] descriptorData = global::System.Convert.FromBase64String(
         string.Concat(
-          "Cg1wb2tlbW9uLnByb3RvIscECg5SZXF1ZXN0RW52ZWxvcBIQCgh1bmtub3du",
+          "Cg1wb2tlbW9uLnByb3RvIt8GCg5SZXF1ZXN0RW52ZWxvcBIQCgh1bmtub3du",
           "MRgBIAEoBRIOCgZycGNfaWQYAyABKAMSKgoIcmVxdWVzdHMYBCADKAsyGC5S",
           "ZXF1ZXN0RW52ZWxvcC5SZXF1ZXN0cxIqCgh1bmtub3duNhgGIAEoCzIYLlJl",
           "cXVlc3RFbnZlbG9wLlVua25vd242EhAKCGxhdGl0dWRlGAcgASgGEhEKCWxv",
           "bmdpdHVkZRgIIAEoBhIQCghhbHRpdHVkZRgJIAEoBhImCgRhdXRoGAogASgL",
-          "MhguUmVxdWVzdEVudmVsb3AuQXV0aEluZm8SEQoJdW5rbm93bjEyGAwgASgD",
-          "GkMKCFJlcXVlc3RzEgwKBHR5cGUYASABKAUSKQoHbWVzc2FnZRgCIAEoCzIY",
-          "LlJlcXVlc3RFbnZlbG9wLlVua25vd24zGhwKCFVua25vd24zEhAKCHVua25v",
-          "d240GAEgASgJGm8KCFVua25vd242EhAKCHVua25vd24xGAEgASgFEjMKCHVu",
-          "a25vd24yGAIgASgLMiEuUmVxdWVzdEVudmVsb3AuVW5rbm93bjYuVW5rbm93",
-          "bjIaHAoIVW5rbm93bjISEAoIdW5rbm93bjEYASABKAwadQoIQXV0aEluZm8S",
-          "EAoIcHJvdmlkZXIYASABKAkSKwoFdG9rZW4YAiABKAsyHC5SZXF1ZXN0RW52",
-          "ZWxvcC5BdXRoSW5mby5KV1QaKgoDSldUEhAKCGNvbnRlbnRzGAEgASgJEhEK",
-          "CXVua25vd24xMxgCIAEoBSL1BgoPUmVzcG9uc2VFbnZlbG9wEhAKCHVua25v",
-          "d24xGAEgASgFEhAKCHVua25vd24yGAIgASgDEg8KB2FwaV91cmwYAyABKAkS",
-          "KwoIdW5rbm93bjYYBiABKAsyGS5SZXNwb25zZUVudmVsb3AuVW5rbm93bjYS",
-          "KwoIdW5rbm93bjcYByABKAsyGS5SZXNwb25zZUVudmVsb3AuVW5rbm93bjcS",
-          "KQoHcGF5bG9hZBhkIAMoCzIYLlJlc3BvbnNlRW52ZWxvcC5QYXlsb2FkGnAK",
-          "CFVua25vd242EhAKCHVua25vd24xGAEgASgFEjQKCHVua25vd24yGAIgASgL",
-          "MiIuUmVzcG9uc2VFbnZlbG9wLlVua25vd242LlVua25vd24yGhwKCFVua25v",
-          "d24yEhAKCHVua25vd24xGAEgASgMGkMKCFVua25vd243EhEKCXVua25vd243",
-          "MRgBIAEoDBIRCgl1bmtub3duNzIYAiABKAMSEQoJdW5rbm93bjczGAMgASgM",
-          "GkYKB1BheWxvYWQSEAoIdW5rbm93bjEYASABKAUSKQoHcHJvZmlsZRgCIAEo",
-          "CzIYLlJlc3BvbnNlRW52ZWxvcC5Qcm9maWxlGqgDCgdQcm9maWxlEhUKDWNy",
-          "ZWF0aW9uX3RpbWUYASABKAMSEAoIdXNlcm5hbWUYAiABKAkSDAoEdGVhbRgF",
-          "IAEoBRIQCgh0dXRvcmlhbBgHIAEoDBI2CgZhdmF0YXIYCCABKAsyJi5SZXNw",
-          "b25zZUVudmVsb3AuUHJvZmlsZS5BdmF0YXJEZXRhaWxzEhQKDHBva2Vfc3Rv",
-          "cmFnZRgJIAEoBRIUCgxpdGVtX3N0b3JhZ2UYCiABKAUSEQoJdW5rbm93bjEx",
-          "GAsgASgJEhEKCXVua25vd24xMhgMIAEoCRIRCgl1bmtub3duMTMYDSABKAkS",
-          "MwoIY3VycmVuY3kYDiADKAsyIS5SZXNwb25zZUVudmVsb3AuUHJvZmlsZS5D",
-          "dXJyZW5jeRpYCg1BdmF0YXJEZXRhaWxzEhAKCHVua25vd24yGAIgASgFEhAK",
-          "CHVua25vd24zGAMgASgFEhAKCHVua25vd245GAkgASgFEhEKCXVua25vd24x",
-          "MBgKIAEoBRooCghDdXJyZW5jeRIMCgR0eXBlGAEgASgJEg4KBmFtb3VudBgC",
-          "IAEoBWIGcHJvdG8z"));
+          "MhguUmVxdWVzdEVudmVsb3AuQXV0aEluZm8SHwoJdW5rbm93bjExGAsgASgL",
+          "MgwuVW5rbm93bkF1dGgSEQoJdW5rbm93bjEyGAwgASgDGkMKCFJlcXVlc3Rz",
+          "EgwKBHR5cGUYASABKAUSKQoHbWVzc2FnZRgCIAEoCzIYLlJlcXVlc3RFbnZl",
+          "bG9wLlVua25vd24zGiQKE01lc3NhZ2VTaW5nbGVTdHJpbmcSDQoFYnl0ZXMY",
+          "ASABKAwaHgoQTWVzc2FnZVNpbmdsZUludBIKCgJmMRgBIAEoAxooCg5NZXNz",
+          "YWdlVHdvSW50cxIKCgJmMRgBIAEoAxIKCgJmNRgFIAEoAxpACgtNZXNzYWdl",
+          "UXVhZBIKCgJmMRgBIAEoDBIKCgJmMhgCIAEoDBILCgNsYXQYAyABKAYSDAoE",
+          "bG9uZxgEIAEoBhoWCgNXYXQSDwoEbG9scxiAgIBAIAMoAxpJCghVbmtub3du",
+          "MxIQCgh1bmtub3duNBgBIAEoCRIQCgh1bmtub3duMhgCIAEoDBILCgNsYXQY",
+          "AyABKAYSDAoEbG9uZxgEIAEoBhpvCghVbmtub3duNhIQCgh1bmtub3duMRgB",
+          "IAEoBRIzCgh1bmtub3duMhgCIAEoCzIhLlJlcXVlc3RFbnZlbG9wLlVua25v",
+          "d242LlVua25vd24yGhwKCFVua25vd24yEhAKCHVua25vd24xGAEgASgMGnUK",
+          "CEF1dGhJbmZvEhAKCHByb3ZpZGVyGAEgASgJEisKBXRva2VuGAIgASgLMhwu",
+          "UmVxdWVzdEVudmVsb3AuQXV0aEluZm8uSldUGioKA0pXVBIQCghjb250ZW50",
+          "cxgBIAEoCRIRCgl1bmtub3duMTMYAiABKAUiRgoLVW5rbm93bkF1dGgSEQoJ",
+          "dW5rbm93bjcxGAEgASgMEhEKCXVua25vd243MhgCIAEoAxIRCgl1bmtub3du",
+          "NzMYAyABKAwiNgoHUGF5bG9hZBIQCgh1bmtub3duMRgBIAEoBRIZCgdwcm9m",
+          "aWxlGAIgASgLMgguUHJvZmlsZSKIAwoHUHJvZmlsZRIVCg1jcmVhdGlvbl90",
+          "aW1lGAEgASgDEhAKCHVzZXJuYW1lGAIgASgJEgwKBHRlYW0YBSABKAUSEAoI",
+          "dHV0b3JpYWwYByABKAwSJgoGYXZhdGFyGAggASgLMhYuUHJvZmlsZS5BdmF0",
+          "YXJEZXRhaWxzEhQKDHBva2Vfc3RvcmFnZRgJIAEoBRIUCgxpdGVtX3N0b3Jh",
+          "Z2UYCiABKAUSEQoJdW5rbm93bjExGAsgASgJEhEKCXVua25vd24xMhgMIAEo",
+          "CRIRCgl1bmtub3duMTMYDSABKAkSIwoIY3VycmVuY3kYDiADKAsyES5Qcm9m",
+          "aWxlLkN1cnJlbmN5GlgKDUF2YXRhckRldGFpbHMSEAoIdW5rbm93bjIYAiAB",
+          "KAUSEAoIdW5rbm93bjMYAyABKAUSEAoIdW5rbm93bjkYCSABKAUSEQoJdW5r",
+          "bm93bjEwGAogASgFGigKCEN1cnJlbmN5EgwKBHR5cGUYASABKAkSDgoGYW1v",
+          "dW50GAIgASgFIrYTCg9SZXNwb25zZUVudmVsb3ASEAoIdW5rbm93bjEYASAB",
+          "KAUSEAoIdW5rbm93bjIYAiABKAMSDwoHYXBpX3VybBgDIAEoCRIrCgh1bmtu",
+          "b3duNhgGIAEoCzIZLlJlc3BvbnNlRW52ZWxvcC5Vbmtub3duNhIeCgh1bmtu",
+          "b3duNxgHIAEoCzIMLlVua25vd25BdXRoEhkKB3BheWxvYWQYZCADKAsyCC5Q",
+          "YXlsb2FkGnAKCFVua25vd242EhAKCHVua25vd24xGAEgASgFEjQKCHVua25v",
+          "d24yGAIgASgLMiIuUmVzcG9uc2VFbnZlbG9wLlVua25vd242LlVua25vd24y",
+          "GhwKCFVua25vd24yEhAKCHVua25vd24xGAEgASgMGkEKEEhlYXJ0YmVhdFBh",
+          "eWxvYWQSLQoFY2VsbHMYASADKAsyHi5SZXNwb25zZUVudmVsb3AuQ2xpZW50",
+          "TWFwQ2VsbBrpAwoNQ2xpZW50TWFwQ2VsbBIQCghTMkNlbGxJZBgBIAEoBBIS",
+          "CgpBc09mVGltZU1zGAIgASgDEi8KBEZvcnQYAyADKAsyIS5SZXNwb25zZUVu",
+          "dmVsb3AuUG9rZW1vbkZvcnRQcm90bxI6CgpTcGF3blBvaW50GAQgAygLMiYu",
+          "UmVzcG9uc2VFbnZlbG9wLkNsaWVudFNwYXduUG9pbnRQcm90bxI2CgtXaWxk",
+          "UG9rZW1vbhgFIAMoCzIhLlJlc3BvbnNlRW52ZWxvcC5XaWxkUG9rZW1vblBy",
+          "b3RvEhcKD0lzVHJ1bmNhdGVkTGlzdBgHIAEoCBI9CgtGb3J0U3VtbWFyeRgI",
+          "IAMoCzIoLlJlc3BvbnNlRW52ZWxvcC5Qb2tlbW9uU3VtbWFyeUZvcnRQcm90",
+          "bxJDChNEZWNpbWF0ZWRTcGF3blBvaW50GAkgAygLMiYuUmVzcG9uc2VFbnZl",
+          "bG9wLkNsaWVudFNwYXduUG9pbnRQcm90bxI0CgpNYXBQb2tlbW9uGAogAygL",
+          "MiAuUmVzcG9uc2VFbnZlbG9wLk1hcFBva2Vtb25Qcm90bxI6Cg1OZWFyYnlQ",
+          "b2tlbW9uGAsgAygLMiMuUmVzcG9uc2VFbnZlbG9wLk5lYXJieVBva2Vtb25Q",
+          "cm90bxpoCgtXaWxkUG9rZW1vbhIQCghVbmlxdWVJZBgBIAEoCRIRCglQb2tl",
+          "bW9uSWQYAiABKAkSNAoHcG9rZW1vbhgLIAMoCzIjLlJlc3BvbnNlRW52ZWxv",
+          "cC5OZWFyYnlQb2tlbW9uUHJvdG8akgEKD01hcFBva2Vtb25Qcm90bxIUCgxT",
+          "cGF3bnBvaW50SWQYASABKAkSEwoLRW5jb3VudGVySWQYAiABKAQSFQoNUG9r",
+          "ZWRleFR5cGVJZBgDIAEoBRIYChBFeHBpcmF0aW9uVGltZU1zGAQgASgDEhAK",
+          "CExhdGl0dWRlGAUgASgBEhEKCUxvbmdpdHVkZRgGIAEoARrnAgoQUG9rZW1v",
+          "bkZvcnRQcm90bxIOCgZGb3J0SWQYASABKAkSFgoOTGFzdE1vZGlmaWVkTXMY",
+          "AiABKAMSEAoITGF0aXR1ZGUYAyABKAESEQoJTG9uZ2l0dWRlGAQgASgBEgwK",
+          "BFRlYW0YBSABKAUSFgoOR3VhcmRQb2tlbW9uSWQYBiABKAUSGQoRR3VhcmRQ",
+          "b2tlbW9uTGV2ZWwYByABKAUSDwoHRW5hYmxlZBgIIAEoCBIQCghGb3J0VHlw",
+          "ZRgJIAEoBRIRCglHeW1Qb2ludHMYCiABKAMSEgoKSXNJbkJhdHRsZRgLIAEo",
+          "CBI3Cg1BY3RpdmVQb2tlbW9uGA0gASgLMiAuUmVzcG9uc2VFbnZlbG9wLk1h",
+          "cFBva2Vtb25Qcm90bxIaChJDb29sZG93bkNvbXBsZXRlTXMYDiABKAMSDwoH",
+          "U3BvbnNvchgPIAEoBRIVCg1SZW5kZXJpbmdUeXBlGBAgASgFGm0KF1Bva2Vt",
+          "b25TdW1tYXJ5Rm9ydFByb3RvEhUKDUZvcnRTdW1tYXJ5SWQYASABKAkSFgoO",
+          "TGFzdE1vZGlmaWVkTXMYAiABKAMSEAoITGF0aXR1ZGUYAyABKAESEQoJTG9u",
+          "Z2l0dWRlGAQgASgBGjwKFUNsaWVudFNwYXduUG9pbnRQcm90bxIQCghMYXRp",
+          "dHVkZRgCIAEoARIRCglMb25naXR1ZGUYAyABKAEa+gEKEFdpbGRQb2tlbW9u",
+          "UHJvdG8SEwoLRW5jb3VudGVySWQYASABKAQSFgoOTGFzdE1vZGlmaWVkTXMY",
+          "AiABKAMSEAoITGF0aXR1ZGUYAyABKAESEQoJTG9uZ2l0dWRlGAQgASgBEhQK",
+          "DFNwYXduUG9pbnRJZBgFIAEoCRI6Cgdwb2tlbW9uGAcgASgLMikuUmVzcG9u",
+          "c2VFbnZlbG9wLldpbGRQb2tlbW9uUHJvdG8uUG9rZW1vbhIYChBUaW1lVGls",
+          "bEhpZGRlbk1zGAsgASgFGigKB1Bva2Vtb24SCgoCSWQYASABKAQSEQoJUG9r",
+          "ZW1vbklkGAIgASgFGlgKEk5lYXJieVBva2Vtb25Qcm90bxIVCg1Qb2tlZGV4",
+          "TnVtYmVyGAEgASgFEhYKDkRpc3RhbmNlTWV0ZXJzGAIgASgCEhMKC0VuY291",
+          "bnRlcklkGAMgASgEGk0KDlByb2ZpbGVQYXlsb2FkEhAKCHVua25vd24xGAEg",
+          "ASgFEikKB3Byb2ZpbGUYAiABKAsyGC5SZXNwb25zZUVudmVsb3AuUHJvZmls",
+          "ZRqoAwoHUHJvZmlsZRIVCg1jcmVhdGlvbl90aW1lGAEgASgDEhAKCHVzZXJu",
+          "YW1lGAIgASgJEgwKBHRlYW0YBSABKAUSEAoIdHV0b3JpYWwYByABKAwSNgoG",
+          "YXZhdGFyGAggASgLMiYuUmVzcG9uc2VFbnZlbG9wLlByb2ZpbGUuQXZhdGFy",
+          "RGV0YWlscxIUCgxwb2tlX3N0b3JhZ2UYCSABKAUSFAoMaXRlbV9zdG9yYWdl",
+          "GAogASgFEhEKCXVua25vd24xMRgLIAEoCRIRCgl1bmtub3duMTIYDCABKAkS",
+          "EQoJdW5rbm93bjEzGA0gASgJEjMKCGN1cnJlbmN5GA4gAygLMiEuUmVzcG9u",
+          "c2VFbnZlbG9wLlByb2ZpbGUuQ3VycmVuY3kaWAoNQXZhdGFyRGV0YWlscxIQ",
+          "Cgh1bmtub3duMhgCIAEoBRIQCgh1bmtub3duMxgDIAEoBRIQCgh1bmtub3du",
+          "ORgJIAEoBRIRCgl1bmtub3duMTAYCiABKAUaKAoIQ3VycmVuY3kSDAoEdHlw",
+          "ZRgBIAEoCRIOCgZhbW91bnQYAiABKAViBnByb3RvMw=="));
     descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
         new pbr::FileDescriptor[] { },
         new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-          new pbr::GeneratedClrTypeInfo(typeof(global::RequestEnvelop), global::RequestEnvelop.Parser, new[]{ "Unknown1", "RpcId", "Requests", "Unknown6", "Latitude", "Longitude", "Altitude", "Auth", "Unknown12" }, null, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::RequestEnvelop.Types.Requests), global::RequestEnvelop.Types.Requests.Parser, new[]{ "Type", "Message" }, null, null, null),
-          new pbr::GeneratedClrTypeInfo(typeof(global::RequestEnvelop.Types.Unknown3), global::RequestEnvelop.Types.Unknown3.Parser, new[]{ "Unknown4" }, null, null, null),
+          new pbr::GeneratedClrTypeInfo(typeof(global::RequestEnvelop), global::RequestEnvelop.Parser, new[]{ "Unknown1", "RpcId", "Requests", "Unknown6", "Latitude", "Longitude", "Altitude", "Auth", "Unknown11", "Unknown12" }, null, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::RequestEnvelop.Types.Requests), global::RequestEnvelop.Types.Requests.Parser, new[]{ "Type", "Message" }, null, null, null),
+          new pbr::GeneratedClrTypeInfo(typeof(global::RequestEnvelop.Types.MessageSingleString), global::RequestEnvelop.Types.MessageSingleString.Parser, new[]{ "Bytes" }, null, null, null),
+          new pbr::GeneratedClrTypeInfo(typeof(global::RequestEnvelop.Types.MessageSingleInt), global::RequestEnvelop.Types.MessageSingleInt.Parser, new[]{ "F1" }, null, null, null),
+          new pbr::GeneratedClrTypeInfo(typeof(global::RequestEnvelop.Types.MessageTwoInts), global::RequestEnvelop.Types.MessageTwoInts.Parser, new[]{ "F1", "F5" }, null, null, null),
+          new pbr::GeneratedClrTypeInfo(typeof(global::RequestEnvelop.Types.MessageQuad), global::RequestEnvelop.Types.MessageQuad.Parser, new[]{ "F1", "F2", "Lat", "Long" }, null, null, null),
+          new pbr::GeneratedClrTypeInfo(typeof(global::RequestEnvelop.Types.Wat), global::RequestEnvelop.Types.Wat.Parser, new[]{ "Lols" }, null, null, null),
+          new pbr::GeneratedClrTypeInfo(typeof(global::RequestEnvelop.Types.Unknown3), global::RequestEnvelop.Types.Unknown3.Parser, new[]{ "Unknown4", "Unknown2", "Lat", "Long" }, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::RequestEnvelop.Types.Unknown6), global::RequestEnvelop.Types.Unknown6.Parser, new[]{ "Unknown1", "Unknown2" }, null, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::RequestEnvelop.Types.Unknown6.Types.Unknown2), global::RequestEnvelop.Types.Unknown6.Types.Unknown2.Parser, new[]{ "Unknown1" }, null, null, null)}),
           new pbr::GeneratedClrTypeInfo(typeof(global::RequestEnvelop.Types.AuthInfo), global::RequestEnvelop.Types.AuthInfo.Parser, new[]{ "Provider", "Token" }, null, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::RequestEnvelop.Types.AuthInfo.Types.JWT), global::RequestEnvelop.Types.AuthInfo.Types.JWT.Parser, new[]{ "Contents", "Unknown13" }, null, null, null)})}),
+          new pbr::GeneratedClrTypeInfo(typeof(global::UnknownAuth), global::UnknownAuth.Parser, new[]{ "Unknown71", "Unknown72", "Unknown73" }, null, null, null),
+          new pbr::GeneratedClrTypeInfo(typeof(global::Payload), global::Payload.Parser, new[]{ "Unknown1", "Profile" }, null, null, null),
+          new pbr::GeneratedClrTypeInfo(typeof(global::Profile), global::Profile.Parser, new[]{ "CreationTime", "Username", "Team", "Tutorial", "Avatar", "PokeStorage", "ItemStorage", "Unknown11", "Unknown12", "Unknown13", "Currency" }, null, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::Profile.Types.AvatarDetails), global::Profile.Types.AvatarDetails.Parser, new[]{ "Unknown2", "Unknown3", "Unknown9", "Unknown10" }, null, null, null),
+          new pbr::GeneratedClrTypeInfo(typeof(global::Profile.Types.Currency), global::Profile.Types.Currency.Parser, new[]{ "Type", "Amount" }, null, null, null)}),
           new pbr::GeneratedClrTypeInfo(typeof(global::ResponseEnvelop), global::ResponseEnvelop.Parser, new[]{ "Unknown1", "Unknown2", "ApiUrl", "Unknown6", "Unknown7", "Payload" }, null, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::ResponseEnvelop.Types.Unknown6), global::ResponseEnvelop.Types.Unknown6.Parser, new[]{ "Unknown1", "Unknown2" }, null, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::ResponseEnvelop.Types.Unknown6.Types.Unknown2), global::ResponseEnvelop.Types.Unknown6.Types.Unknown2.Parser, new[]{ "Unknown1" }, null, null, null)}),
-          new pbr::GeneratedClrTypeInfo(typeof(global::ResponseEnvelop.Types.Unknown7), global::ResponseEnvelop.Types.Unknown7.Parser, new[]{ "Unknown71", "Unknown72", "Unknown73" }, null, null, null),
-          new pbr::GeneratedClrTypeInfo(typeof(global::ResponseEnvelop.Types.Payload), global::ResponseEnvelop.Types.Payload.Parser, new[]{ "Unknown1", "Profile" }, null, null, null),
+          new pbr::GeneratedClrTypeInfo(typeof(global::ResponseEnvelop.Types.HeartbeatPayload), global::ResponseEnvelop.Types.HeartbeatPayload.Parser, new[]{ "Cells" }, null, null, null),
+          new pbr::GeneratedClrTypeInfo(typeof(global::ResponseEnvelop.Types.ClientMapCell), global::ResponseEnvelop.Types.ClientMapCell.Parser, new[]{ "S2CellId", "AsOfTimeMs", "Fort", "SpawnPoint", "WildPokemon", "IsTruncatedList", "FortSummary", "DecimatedSpawnPoint", "MapPokemon", "NearbyPokemon" }, null, null, null),
+          new pbr::GeneratedClrTypeInfo(typeof(global::ResponseEnvelop.Types.WildPokemon), global::ResponseEnvelop.Types.WildPokemon.Parser, new[]{ "UniqueId", "PokemonId", "Pokemon" }, null, null, null),
+          new pbr::GeneratedClrTypeInfo(typeof(global::ResponseEnvelop.Types.MapPokemonProto), global::ResponseEnvelop.Types.MapPokemonProto.Parser, new[]{ "SpawnpointId", "EncounterId", "PokedexTypeId", "ExpirationTimeMs", "Latitude", "Longitude" }, null, null, null),
+          new pbr::GeneratedClrTypeInfo(typeof(global::ResponseEnvelop.Types.PokemonFortProto), global::ResponseEnvelop.Types.PokemonFortProto.Parser, new[]{ "FortId", "LastModifiedMs", "Latitude", "Longitude", "Team", "GuardPokemonId", "GuardPokemonLevel", "Enabled", "FortType", "GymPoints", "IsInBattle", "ActivePokemon", "CooldownCompleteMs", "Sponsor", "RenderingType" }, null, null, null),
+          new pbr::GeneratedClrTypeInfo(typeof(global::ResponseEnvelop.Types.PokemonSummaryFortProto), global::ResponseEnvelop.Types.PokemonSummaryFortProto.Parser, new[]{ "FortSummaryId", "LastModifiedMs", "Latitude", "Longitude" }, null, null, null),
+          new pbr::GeneratedClrTypeInfo(typeof(global::ResponseEnvelop.Types.ClientSpawnPointProto), global::ResponseEnvelop.Types.ClientSpawnPointProto.Parser, new[]{ "Latitude", "Longitude" }, null, null, null),
+          new pbr::GeneratedClrTypeInfo(typeof(global::ResponseEnvelop.Types.WildPokemonProto), global::ResponseEnvelop.Types.WildPokemonProto.Parser, new[]{ "EncounterId", "LastModifiedMs", "Latitude", "Longitude", "SpawnPointId", "Pokemon", "TimeTillHiddenMs" }, null, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::ResponseEnvelop.Types.WildPokemonProto.Types.Pokemon), global::ResponseEnvelop.Types.WildPokemonProto.Types.Pokemon.Parser, new[]{ "Id", "PokemonId" }, null, null, null)}),
+          new pbr::GeneratedClrTypeInfo(typeof(global::ResponseEnvelop.Types.NearbyPokemonProto), global::ResponseEnvelop.Types.NearbyPokemonProto.Parser, new[]{ "PokedexNumber", "DistanceMeters", "EncounterId" }, null, null, null),
+          new pbr::GeneratedClrTypeInfo(typeof(global::ResponseEnvelop.Types.ProfilePayload), global::ResponseEnvelop.Types.ProfilePayload.Parser, new[]{ "Unknown1", "Profile" }, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::ResponseEnvelop.Types.Profile), global::ResponseEnvelop.Types.Profile.Parser, new[]{ "CreationTime", "Username", "Team", "Tutorial", "Avatar", "PokeStorage", "ItemStorage", "Unknown11", "Unknown12", "Unknown13", "Currency" }, null, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::ResponseEnvelop.Types.Profile.Types.AvatarDetails), global::ResponseEnvelop.Types.Profile.Types.AvatarDetails.Parser, new[]{ "Unknown2", "Unknown3", "Unknown9", "Unknown10" }, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::ResponseEnvelop.Types.Profile.Types.Currency), global::ResponseEnvelop.Types.Profile.Types.Currency.Parser, new[]{ "Type", "Amount" }, null, null, null)})})
         }));
@@ -101,6 +171,7 @@ public sealed partial class RequestEnvelop : pb::IMessage<RequestEnvelop> {
     longitude_ = other.longitude_;
     altitude_ = other.altitude_;
     Auth = other.auth_ != null ? other.Auth.Clone() : null;
+    Unknown11 = other.unknown11_ != null ? other.Unknown11.Clone() : null;
     unknown12_ = other.unknown12_;
   }
 
@@ -187,6 +258,16 @@ public sealed partial class RequestEnvelop : pb::IMessage<RequestEnvelop> {
     }
   }
 
+  /// <summary>Field number for the "unknown11" field.</summary>
+  public const int Unknown11FieldNumber = 11;
+  private global::UnknownAuth unknown11_;
+  public global::UnknownAuth Unknown11 {
+    get { return unknown11_; }
+    set {
+      unknown11_ = value;
+    }
+  }
+
   /// <summary>Field number for the "unknown12" field.</summary>
   public const int Unknown12FieldNumber = 12;
   private long unknown12_;
@@ -216,6 +297,7 @@ public sealed partial class RequestEnvelop : pb::IMessage<RequestEnvelop> {
     if (Longitude != other.Longitude) return false;
     if (Altitude != other.Altitude) return false;
     if (!object.Equals(Auth, other.Auth)) return false;
+    if (!object.Equals(Unknown11, other.Unknown11)) return false;
     if (Unknown12 != other.Unknown12) return false;
     return true;
   }
@@ -230,6 +312,7 @@ public sealed partial class RequestEnvelop : pb::IMessage<RequestEnvelop> {
     if (Longitude != 0UL) hash ^= Longitude.GetHashCode();
     if (Altitude != 0UL) hash ^= Altitude.GetHashCode();
     if (auth_ != null) hash ^= Auth.GetHashCode();
+    if (unknown11_ != null) hash ^= Unknown11.GetHashCode();
     if (Unknown12 != 0L) hash ^= Unknown12.GetHashCode();
     return hash;
   }
@@ -268,6 +351,10 @@ public sealed partial class RequestEnvelop : pb::IMessage<RequestEnvelop> {
       output.WriteRawTag(82);
       output.WriteMessage(Auth);
     }
+    if (unknown11_ != null) {
+      output.WriteRawTag(90);
+      output.WriteMessage(Unknown11);
+    }
     if (Unknown12 != 0L) {
       output.WriteRawTag(96);
       output.WriteInt64(Unknown12);
@@ -297,6 +384,9 @@ public sealed partial class RequestEnvelop : pb::IMessage<RequestEnvelop> {
     }
     if (auth_ != null) {
       size += 1 + pb::CodedOutputStream.ComputeMessageSize(Auth);
+    }
+    if (unknown11_ != null) {
+      size += 1 + pb::CodedOutputStream.ComputeMessageSize(Unknown11);
     }
     if (Unknown12 != 0L) {
       size += 1 + pb::CodedOutputStream.ComputeInt64Size(Unknown12);
@@ -335,6 +425,12 @@ public sealed partial class RequestEnvelop : pb::IMessage<RequestEnvelop> {
         auth_ = new global::RequestEnvelop.Types.AuthInfo();
       }
       Auth.MergeFrom(other.Auth);
+    }
+    if (other.unknown11_ != null) {
+      if (unknown11_ == null) {
+        unknown11_ = new global::UnknownAuth();
+      }
+      Unknown11.MergeFrom(other.Unknown11);
     }
     if (other.Unknown12 != 0L) {
       Unknown12 = other.Unknown12;
@@ -384,6 +480,13 @@ public sealed partial class RequestEnvelop : pb::IMessage<RequestEnvelop> {
             auth_ = new global::RequestEnvelop.Types.AuthInfo();
           }
           input.ReadMessage(auth_);
+          break;
+        }
+        case 90: {
+          if (unknown11_ == null) {
+            unknown11_ = new global::UnknownAuth();
+          }
+          input.ReadMessage(unknown11_);
           break;
         }
         case 96: {
@@ -535,12 +638,628 @@ public sealed partial class RequestEnvelop : pb::IMessage<RequestEnvelop> {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+    public sealed partial class MessageSingleString : pb::IMessage<MessageSingleString> {
+      private static readonly pb::MessageParser<MessageSingleString> _parser = new pb::MessageParser<MessageSingleString>(() => new MessageSingleString());
+      public static pb::MessageParser<MessageSingleString> Parser { get { return _parser; } }
+
+      public static pbr::MessageDescriptor Descriptor {
+        get { return global::RequestEnvelop.Descriptor.NestedTypes[1]; }
+      }
+
+      pbr::MessageDescriptor pb::IMessage.Descriptor {
+        get { return Descriptor; }
+      }
+
+      public MessageSingleString() {
+        OnConstruction();
+      }
+
+      partial void OnConstruction();
+
+      public MessageSingleString(MessageSingleString other) : this() {
+        bytes_ = other.bytes_;
+      }
+
+      public MessageSingleString Clone() {
+        return new MessageSingleString(this);
+      }
+
+      /// <summary>Field number for the "bytes" field.</summary>
+      public const int BytesFieldNumber = 1;
+      private pb::ByteString bytes_ = pb::ByteString.Empty;
+      public pb::ByteString Bytes {
+        get { return bytes_; }
+        set {
+          bytes_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+        }
+      }
+
+      public override bool Equals(object other) {
+        return Equals(other as MessageSingleString);
+      }
+
+      public bool Equals(MessageSingleString other) {
+        if (ReferenceEquals(other, null)) {
+          return false;
+        }
+        if (ReferenceEquals(other, this)) {
+          return true;
+        }
+        if (Bytes != other.Bytes) return false;
+        return true;
+      }
+
+      public override int GetHashCode() {
+        int hash = 1;
+        if (Bytes.Length != 0) hash ^= Bytes.GetHashCode();
+        return hash;
+      }
+
+      public override string ToString() {
+        return pb::JsonFormatter.ToDiagnosticString(this);
+      }
+
+      public void WriteTo(pb::CodedOutputStream output) {
+        if (Bytes.Length != 0) {
+          output.WriteRawTag(10);
+          output.WriteBytes(Bytes);
+        }
+      }
+
+      public int CalculateSize() {
+        int size = 0;
+        if (Bytes.Length != 0) {
+          size += 1 + pb::CodedOutputStream.ComputeBytesSize(Bytes);
+        }
+        return size;
+      }
+
+      public void MergeFrom(MessageSingleString other) {
+        if (other == null) {
+          return;
+        }
+        if (other.Bytes.Length != 0) {
+          Bytes = other.Bytes;
+        }
+      }
+
+      public void MergeFrom(pb::CodedInputStream input) {
+        uint tag;
+        while ((tag = input.ReadTag()) != 0) {
+          switch(tag) {
+            default:
+              input.SkipLastField();
+              break;
+            case 10: {
+              Bytes = input.ReadBytes();
+              break;
+            }
+          }
+        }
+      }
+
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+    public sealed partial class MessageSingleInt : pb::IMessage<MessageSingleInt> {
+      private static readonly pb::MessageParser<MessageSingleInt> _parser = new pb::MessageParser<MessageSingleInt>(() => new MessageSingleInt());
+      public static pb::MessageParser<MessageSingleInt> Parser { get { return _parser; } }
+
+      public static pbr::MessageDescriptor Descriptor {
+        get { return global::RequestEnvelop.Descriptor.NestedTypes[2]; }
+      }
+
+      pbr::MessageDescriptor pb::IMessage.Descriptor {
+        get { return Descriptor; }
+      }
+
+      public MessageSingleInt() {
+        OnConstruction();
+      }
+
+      partial void OnConstruction();
+
+      public MessageSingleInt(MessageSingleInt other) : this() {
+        f1_ = other.f1_;
+      }
+
+      public MessageSingleInt Clone() {
+        return new MessageSingleInt(this);
+      }
+
+      /// <summary>Field number for the "f1" field.</summary>
+      public const int F1FieldNumber = 1;
+      private long f1_;
+      public long F1 {
+        get { return f1_; }
+        set {
+          f1_ = value;
+        }
+      }
+
+      public override bool Equals(object other) {
+        return Equals(other as MessageSingleInt);
+      }
+
+      public bool Equals(MessageSingleInt other) {
+        if (ReferenceEquals(other, null)) {
+          return false;
+        }
+        if (ReferenceEquals(other, this)) {
+          return true;
+        }
+        if (F1 != other.F1) return false;
+        return true;
+      }
+
+      public override int GetHashCode() {
+        int hash = 1;
+        if (F1 != 0L) hash ^= F1.GetHashCode();
+        return hash;
+      }
+
+      public override string ToString() {
+        return pb::JsonFormatter.ToDiagnosticString(this);
+      }
+
+      public void WriteTo(pb::CodedOutputStream output) {
+        if (F1 != 0L) {
+          output.WriteRawTag(8);
+          output.WriteInt64(F1);
+        }
+      }
+
+      public int CalculateSize() {
+        int size = 0;
+        if (F1 != 0L) {
+          size += 1 + pb::CodedOutputStream.ComputeInt64Size(F1);
+        }
+        return size;
+      }
+
+      public void MergeFrom(MessageSingleInt other) {
+        if (other == null) {
+          return;
+        }
+        if (other.F1 != 0L) {
+          F1 = other.F1;
+        }
+      }
+
+      public void MergeFrom(pb::CodedInputStream input) {
+        uint tag;
+        while ((tag = input.ReadTag()) != 0) {
+          switch(tag) {
+            default:
+              input.SkipLastField();
+              break;
+            case 8: {
+              F1 = input.ReadInt64();
+              break;
+            }
+          }
+        }
+      }
+
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+    public sealed partial class MessageTwoInts : pb::IMessage<MessageTwoInts> {
+      private static readonly pb::MessageParser<MessageTwoInts> _parser = new pb::MessageParser<MessageTwoInts>(() => new MessageTwoInts());
+      public static pb::MessageParser<MessageTwoInts> Parser { get { return _parser; } }
+
+      public static pbr::MessageDescriptor Descriptor {
+        get { return global::RequestEnvelop.Descriptor.NestedTypes[3]; }
+      }
+
+      pbr::MessageDescriptor pb::IMessage.Descriptor {
+        get { return Descriptor; }
+      }
+
+      public MessageTwoInts() {
+        OnConstruction();
+      }
+
+      partial void OnConstruction();
+
+      public MessageTwoInts(MessageTwoInts other) : this() {
+        f1_ = other.f1_;
+        f5_ = other.f5_;
+      }
+
+      public MessageTwoInts Clone() {
+        return new MessageTwoInts(this);
+      }
+
+      /// <summary>Field number for the "f1" field.</summary>
+      public const int F1FieldNumber = 1;
+      private long f1_;
+      public long F1 {
+        get { return f1_; }
+        set {
+          f1_ = value;
+        }
+      }
+
+      /// <summary>Field number for the "f5" field.</summary>
+      public const int F5FieldNumber = 5;
+      private long f5_;
+      public long F5 {
+        get { return f5_; }
+        set {
+          f5_ = value;
+        }
+      }
+
+      public override bool Equals(object other) {
+        return Equals(other as MessageTwoInts);
+      }
+
+      public bool Equals(MessageTwoInts other) {
+        if (ReferenceEquals(other, null)) {
+          return false;
+        }
+        if (ReferenceEquals(other, this)) {
+          return true;
+        }
+        if (F1 != other.F1) return false;
+        if (F5 != other.F5) return false;
+        return true;
+      }
+
+      public override int GetHashCode() {
+        int hash = 1;
+        if (F1 != 0L) hash ^= F1.GetHashCode();
+        if (F5 != 0L) hash ^= F5.GetHashCode();
+        return hash;
+      }
+
+      public override string ToString() {
+        return pb::JsonFormatter.ToDiagnosticString(this);
+      }
+
+      public void WriteTo(pb::CodedOutputStream output) {
+        if (F1 != 0L) {
+          output.WriteRawTag(8);
+          output.WriteInt64(F1);
+        }
+        if (F5 != 0L) {
+          output.WriteRawTag(40);
+          output.WriteInt64(F5);
+        }
+      }
+
+      public int CalculateSize() {
+        int size = 0;
+        if (F1 != 0L) {
+          size += 1 + pb::CodedOutputStream.ComputeInt64Size(F1);
+        }
+        if (F5 != 0L) {
+          size += 1 + pb::CodedOutputStream.ComputeInt64Size(F5);
+        }
+        return size;
+      }
+
+      public void MergeFrom(MessageTwoInts other) {
+        if (other == null) {
+          return;
+        }
+        if (other.F1 != 0L) {
+          F1 = other.F1;
+        }
+        if (other.F5 != 0L) {
+          F5 = other.F5;
+        }
+      }
+
+      public void MergeFrom(pb::CodedInputStream input) {
+        uint tag;
+        while ((tag = input.ReadTag()) != 0) {
+          switch(tag) {
+            default:
+              input.SkipLastField();
+              break;
+            case 8: {
+              F1 = input.ReadInt64();
+              break;
+            }
+            case 40: {
+              F5 = input.ReadInt64();
+              break;
+            }
+          }
+        }
+      }
+
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+    public sealed partial class MessageQuad : pb::IMessage<MessageQuad> {
+      private static readonly pb::MessageParser<MessageQuad> _parser = new pb::MessageParser<MessageQuad>(() => new MessageQuad());
+      public static pb::MessageParser<MessageQuad> Parser { get { return _parser; } }
+
+      public static pbr::MessageDescriptor Descriptor {
+        get { return global::RequestEnvelop.Descriptor.NestedTypes[4]; }
+      }
+
+      pbr::MessageDescriptor pb::IMessage.Descriptor {
+        get { return Descriptor; }
+      }
+
+      public MessageQuad() {
+        OnConstruction();
+      }
+
+      partial void OnConstruction();
+
+      public MessageQuad(MessageQuad other) : this() {
+        f1_ = other.f1_;
+        f2_ = other.f2_;
+        lat_ = other.lat_;
+        long_ = other.long_;
+      }
+
+      public MessageQuad Clone() {
+        return new MessageQuad(this);
+      }
+
+      /// <summary>Field number for the "f1" field.</summary>
+      public const int F1FieldNumber = 1;
+      private pb::ByteString f1_ = pb::ByteString.Empty;
+      public pb::ByteString F1 {
+        get { return f1_; }
+        set {
+          f1_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+        }
+      }
+
+      /// <summary>Field number for the "f2" field.</summary>
+      public const int F2FieldNumber = 2;
+      private pb::ByteString f2_ = pb::ByteString.Empty;
+      public pb::ByteString F2 {
+        get { return f2_; }
+        set {
+          f2_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+        }
+      }
+
+      /// <summary>Field number for the "lat" field.</summary>
+      public const int LatFieldNumber = 3;
+      private ulong lat_;
+      public ulong Lat {
+        get { return lat_; }
+        set {
+          lat_ = value;
+        }
+      }
+
+      /// <summary>Field number for the "long" field.</summary>
+      public const int LongFieldNumber = 4;
+      private ulong long_;
+      public ulong Long {
+        get { return long_; }
+        set {
+          long_ = value;
+        }
+      }
+
+      public override bool Equals(object other) {
+        return Equals(other as MessageQuad);
+      }
+
+      public bool Equals(MessageQuad other) {
+        if (ReferenceEquals(other, null)) {
+          return false;
+        }
+        if (ReferenceEquals(other, this)) {
+          return true;
+        }
+        if (F1 != other.F1) return false;
+        if (F2 != other.F2) return false;
+        if (Lat != other.Lat) return false;
+        if (Long != other.Long) return false;
+        return true;
+      }
+
+      public override int GetHashCode() {
+        int hash = 1;
+        if (F1.Length != 0) hash ^= F1.GetHashCode();
+        if (F2.Length != 0) hash ^= F2.GetHashCode();
+        if (Lat != 0UL) hash ^= Lat.GetHashCode();
+        if (Long != 0UL) hash ^= Long.GetHashCode();
+        return hash;
+      }
+
+      public override string ToString() {
+        return pb::JsonFormatter.ToDiagnosticString(this);
+      }
+
+      public void WriteTo(pb::CodedOutputStream output) {
+        if (F1.Length != 0) {
+          output.WriteRawTag(10);
+          output.WriteBytes(F1);
+        }
+        if (F2.Length != 0) {
+          output.WriteRawTag(18);
+          output.WriteBytes(F2);
+        }
+        if (Lat != 0UL) {
+          output.WriteRawTag(25);
+          output.WriteFixed64(Lat);
+        }
+        if (Long != 0UL) {
+          output.WriteRawTag(33);
+          output.WriteFixed64(Long);
+        }
+      }
+
+      public int CalculateSize() {
+        int size = 0;
+        if (F1.Length != 0) {
+          size += 1 + pb::CodedOutputStream.ComputeBytesSize(F1);
+        }
+        if (F2.Length != 0) {
+          size += 1 + pb::CodedOutputStream.ComputeBytesSize(F2);
+        }
+        if (Lat != 0UL) {
+          size += 1 + 8;
+        }
+        if (Long != 0UL) {
+          size += 1 + 8;
+        }
+        return size;
+      }
+
+      public void MergeFrom(MessageQuad other) {
+        if (other == null) {
+          return;
+        }
+        if (other.F1.Length != 0) {
+          F1 = other.F1;
+        }
+        if (other.F2.Length != 0) {
+          F2 = other.F2;
+        }
+        if (other.Lat != 0UL) {
+          Lat = other.Lat;
+        }
+        if (other.Long != 0UL) {
+          Long = other.Long;
+        }
+      }
+
+      public void MergeFrom(pb::CodedInputStream input) {
+        uint tag;
+        while ((tag = input.ReadTag()) != 0) {
+          switch(tag) {
+            default:
+              input.SkipLastField();
+              break;
+            case 10: {
+              F1 = input.ReadBytes();
+              break;
+            }
+            case 18: {
+              F2 = input.ReadBytes();
+              break;
+            }
+            case 25: {
+              Lat = input.ReadFixed64();
+              break;
+            }
+            case 33: {
+              Long = input.ReadFixed64();
+              break;
+            }
+          }
+        }
+      }
+
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+    public sealed partial class Wat : pb::IMessage<Wat> {
+      private static readonly pb::MessageParser<Wat> _parser = new pb::MessageParser<Wat>(() => new Wat());
+      public static pb::MessageParser<Wat> Parser { get { return _parser; } }
+
+      public static pbr::MessageDescriptor Descriptor {
+        get { return global::RequestEnvelop.Descriptor.NestedTypes[5]; }
+      }
+
+      pbr::MessageDescriptor pb::IMessage.Descriptor {
+        get { return Descriptor; }
+      }
+
+      public Wat() {
+        OnConstruction();
+      }
+
+      partial void OnConstruction();
+
+      public Wat(Wat other) : this() {
+        lols_ = other.lols_.Clone();
+      }
+
+      public Wat Clone() {
+        return new Wat(this);
+      }
+
+      /// <summary>Field number for the "lols" field.</summary>
+      public const int LolsFieldNumber = 134217728;
+      private static readonly pb::FieldCodec<long> _repeated_lols_codec
+          = pb::FieldCodec.ForInt64(1073741826);
+      private readonly pbc::RepeatedField<long> lols_ = new pbc::RepeatedField<long>();
+      public pbc::RepeatedField<long> Lols {
+        get { return lols_; }
+      }
+
+      public override bool Equals(object other) {
+        return Equals(other as Wat);
+      }
+
+      public bool Equals(Wat other) {
+        if (ReferenceEquals(other, null)) {
+          return false;
+        }
+        if (ReferenceEquals(other, this)) {
+          return true;
+        }
+        if(!lols_.Equals(other.lols_)) return false;
+        return true;
+      }
+
+      public override int GetHashCode() {
+        int hash = 1;
+        hash ^= lols_.GetHashCode();
+        return hash;
+      }
+
+      public override string ToString() {
+        return pb::JsonFormatter.ToDiagnosticString(this);
+      }
+
+      public void WriteTo(pb::CodedOutputStream output) {
+        lols_.WriteTo(output, _repeated_lols_codec);
+      }
+
+      public int CalculateSize() {
+        int size = 0;
+        size += lols_.CalculateSize(_repeated_lols_codec);
+        return size;
+      }
+
+      public void MergeFrom(Wat other) {
+        if (other == null) {
+          return;
+        }
+        lols_.Add(other.lols_);
+      }
+
+      public void MergeFrom(pb::CodedInputStream input) {
+        uint tag;
+        while ((tag = input.ReadTag()) != 0) {
+          switch(tag) {
+            default:
+              input.SkipLastField();
+              break;
+            case 1073741826:
+            case 1073741824: {
+              lols_.AddEntriesFrom(input, _repeated_lols_codec);
+              break;
+            }
+          }
+        }
+      }
+
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     public sealed partial class Unknown3 : pb::IMessage<Unknown3> {
       private static readonly pb::MessageParser<Unknown3> _parser = new pb::MessageParser<Unknown3>(() => new Unknown3());
       public static pb::MessageParser<Unknown3> Parser { get { return _parser; } }
 
       public static pbr::MessageDescriptor Descriptor {
-        get { return global::RequestEnvelop.Descriptor.NestedTypes[1]; }
+        get { return global::RequestEnvelop.Descriptor.NestedTypes[6]; }
       }
 
       pbr::MessageDescriptor pb::IMessage.Descriptor {
@@ -555,6 +1274,9 @@ public sealed partial class RequestEnvelop : pb::IMessage<RequestEnvelop> {
 
       public Unknown3(Unknown3 other) : this() {
         unknown4_ = other.unknown4_;
+        unknown2_ = other.unknown2_;
+        lat_ = other.lat_;
+        long_ = other.long_;
       }
 
       public Unknown3 Clone() {
@@ -571,6 +1293,36 @@ public sealed partial class RequestEnvelop : pb::IMessage<RequestEnvelop> {
         }
       }
 
+      /// <summary>Field number for the "unknown2" field.</summary>
+      public const int Unknown2FieldNumber = 2;
+      private pb::ByteString unknown2_ = pb::ByteString.Empty;
+      public pb::ByteString Unknown2 {
+        get { return unknown2_; }
+        set {
+          unknown2_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+        }
+      }
+
+      /// <summary>Field number for the "lat" field.</summary>
+      public const int LatFieldNumber = 3;
+      private ulong lat_;
+      public ulong Lat {
+        get { return lat_; }
+        set {
+          lat_ = value;
+        }
+      }
+
+      /// <summary>Field number for the "long" field.</summary>
+      public const int LongFieldNumber = 4;
+      private ulong long_;
+      public ulong Long {
+        get { return long_; }
+        set {
+          long_ = value;
+        }
+      }
+
       public override bool Equals(object other) {
         return Equals(other as Unknown3);
       }
@@ -583,12 +1335,18 @@ public sealed partial class RequestEnvelop : pb::IMessage<RequestEnvelop> {
           return true;
         }
         if (Unknown4 != other.Unknown4) return false;
+        if (Unknown2 != other.Unknown2) return false;
+        if (Lat != other.Lat) return false;
+        if (Long != other.Long) return false;
         return true;
       }
 
       public override int GetHashCode() {
         int hash = 1;
         if (Unknown4.Length != 0) hash ^= Unknown4.GetHashCode();
+        if (Unknown2.Length != 0) hash ^= Unknown2.GetHashCode();
+        if (Lat != 0UL) hash ^= Lat.GetHashCode();
+        if (Long != 0UL) hash ^= Long.GetHashCode();
         return hash;
       }
 
@@ -601,12 +1359,33 @@ public sealed partial class RequestEnvelop : pb::IMessage<RequestEnvelop> {
           output.WriteRawTag(10);
           output.WriteString(Unknown4);
         }
+        if (Unknown2.Length != 0) {
+          output.WriteRawTag(18);
+          output.WriteBytes(Unknown2);
+        }
+        if (Lat != 0UL) {
+          output.WriteRawTag(25);
+          output.WriteFixed64(Lat);
+        }
+        if (Long != 0UL) {
+          output.WriteRawTag(33);
+          output.WriteFixed64(Long);
+        }
       }
 
       public int CalculateSize() {
         int size = 0;
         if (Unknown4.Length != 0) {
           size += 1 + pb::CodedOutputStream.ComputeStringSize(Unknown4);
+        }
+        if (Unknown2.Length != 0) {
+          size += 1 + pb::CodedOutputStream.ComputeBytesSize(Unknown2);
+        }
+        if (Lat != 0UL) {
+          size += 1 + 8;
+        }
+        if (Long != 0UL) {
+          size += 1 + 8;
         }
         return size;
       }
@@ -617,6 +1396,15 @@ public sealed partial class RequestEnvelop : pb::IMessage<RequestEnvelop> {
         }
         if (other.Unknown4.Length != 0) {
           Unknown4 = other.Unknown4;
+        }
+        if (other.Unknown2.Length != 0) {
+          Unknown2 = other.Unknown2;
+        }
+        if (other.Lat != 0UL) {
+          Lat = other.Lat;
+        }
+        if (other.Long != 0UL) {
+          Long = other.Long;
         }
       }
 
@@ -631,6 +1419,18 @@ public sealed partial class RequestEnvelop : pb::IMessage<RequestEnvelop> {
               Unknown4 = input.ReadString();
               break;
             }
+            case 18: {
+              Unknown2 = input.ReadBytes();
+              break;
+            }
+            case 25: {
+              Lat = input.ReadFixed64();
+              break;
+            }
+            case 33: {
+              Long = input.ReadFixed64();
+              break;
+            }
           }
         }
       }
@@ -643,7 +1443,7 @@ public sealed partial class RequestEnvelop : pb::IMessage<RequestEnvelop> {
       public static pb::MessageParser<Unknown6> Parser { get { return _parser; } }
 
       public static pbr::MessageDescriptor Descriptor {
-        get { return global::RequestEnvelop.Descriptor.NestedTypes[2]; }
+        get { return global::RequestEnvelop.Descriptor.NestedTypes[7]; }
       }
 
       pbr::MessageDescriptor pb::IMessage.Descriptor {
@@ -889,7 +1689,7 @@ public sealed partial class RequestEnvelop : pb::IMessage<RequestEnvelop> {
       public static pb::MessageParser<AuthInfo> Parser { get { return _parser; } }
 
       public static pbr::MessageDescriptor Descriptor {
-        get { return global::RequestEnvelop.Descriptor.NestedTypes[3]; }
+        get { return global::RequestEnvelop.Descriptor.NestedTypes[8]; }
       }
 
       pbr::MessageDescriptor pb::IMessage.Descriptor {
@@ -1162,12 +1962,997 @@ public sealed partial class RequestEnvelop : pb::IMessage<RequestEnvelop> {
 }
 
 [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+public sealed partial class UnknownAuth : pb::IMessage<UnknownAuth> {
+  private static readonly pb::MessageParser<UnknownAuth> _parser = new pb::MessageParser<UnknownAuth>(() => new UnknownAuth());
+  public static pb::MessageParser<UnknownAuth> Parser { get { return _parser; } }
+
+  public static pbr::MessageDescriptor Descriptor {
+    get { return global::PokemonReflection.Descriptor.MessageTypes[1]; }
+  }
+
+  pbr::MessageDescriptor pb::IMessage.Descriptor {
+    get { return Descriptor; }
+  }
+
+  public UnknownAuth() {
+    OnConstruction();
+  }
+
+  partial void OnConstruction();
+
+  public UnknownAuth(UnknownAuth other) : this() {
+    unknown71_ = other.unknown71_;
+    unknown72_ = other.unknown72_;
+    unknown73_ = other.unknown73_;
+  }
+
+  public UnknownAuth Clone() {
+    return new UnknownAuth(this);
+  }
+
+  /// <summary>Field number for the "unknown71" field.</summary>
+  public const int Unknown71FieldNumber = 1;
+  private pb::ByteString unknown71_ = pb::ByteString.Empty;
+  public pb::ByteString Unknown71 {
+    get { return unknown71_; }
+    set {
+      unknown71_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+    }
+  }
+
+  /// <summary>Field number for the "unknown72" field.</summary>
+  public const int Unknown72FieldNumber = 2;
+  private long unknown72_;
+  public long Unknown72 {
+    get { return unknown72_; }
+    set {
+      unknown72_ = value;
+    }
+  }
+
+  /// <summary>Field number for the "unknown73" field.</summary>
+  public const int Unknown73FieldNumber = 3;
+  private pb::ByteString unknown73_ = pb::ByteString.Empty;
+  public pb::ByteString Unknown73 {
+    get { return unknown73_; }
+    set {
+      unknown73_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+    }
+  }
+
+  public override bool Equals(object other) {
+    return Equals(other as UnknownAuth);
+  }
+
+  public bool Equals(UnknownAuth other) {
+    if (ReferenceEquals(other, null)) {
+      return false;
+    }
+    if (ReferenceEquals(other, this)) {
+      return true;
+    }
+    if (Unknown71 != other.Unknown71) return false;
+    if (Unknown72 != other.Unknown72) return false;
+    if (Unknown73 != other.Unknown73) return false;
+    return true;
+  }
+
+  public override int GetHashCode() {
+    int hash = 1;
+    if (Unknown71.Length != 0) hash ^= Unknown71.GetHashCode();
+    if (Unknown72 != 0L) hash ^= Unknown72.GetHashCode();
+    if (Unknown73.Length != 0) hash ^= Unknown73.GetHashCode();
+    return hash;
+  }
+
+  public override string ToString() {
+    return pb::JsonFormatter.ToDiagnosticString(this);
+  }
+
+  public void WriteTo(pb::CodedOutputStream output) {
+    if (Unknown71.Length != 0) {
+      output.WriteRawTag(10);
+      output.WriteBytes(Unknown71);
+    }
+    if (Unknown72 != 0L) {
+      output.WriteRawTag(16);
+      output.WriteInt64(Unknown72);
+    }
+    if (Unknown73.Length != 0) {
+      output.WriteRawTag(26);
+      output.WriteBytes(Unknown73);
+    }
+  }
+
+  public int CalculateSize() {
+    int size = 0;
+    if (Unknown71.Length != 0) {
+      size += 1 + pb::CodedOutputStream.ComputeBytesSize(Unknown71);
+    }
+    if (Unknown72 != 0L) {
+      size += 1 + pb::CodedOutputStream.ComputeInt64Size(Unknown72);
+    }
+    if (Unknown73.Length != 0) {
+      size += 1 + pb::CodedOutputStream.ComputeBytesSize(Unknown73);
+    }
+    return size;
+  }
+
+  public void MergeFrom(UnknownAuth other) {
+    if (other == null) {
+      return;
+    }
+    if (other.Unknown71.Length != 0) {
+      Unknown71 = other.Unknown71;
+    }
+    if (other.Unknown72 != 0L) {
+      Unknown72 = other.Unknown72;
+    }
+    if (other.Unknown73.Length != 0) {
+      Unknown73 = other.Unknown73;
+    }
+  }
+
+  public void MergeFrom(pb::CodedInputStream input) {
+    uint tag;
+    while ((tag = input.ReadTag()) != 0) {
+      switch(tag) {
+        default:
+          input.SkipLastField();
+          break;
+        case 10: {
+          Unknown71 = input.ReadBytes();
+          break;
+        }
+        case 16: {
+          Unknown72 = input.ReadInt64();
+          break;
+        }
+        case 26: {
+          Unknown73 = input.ReadBytes();
+          break;
+        }
+      }
+    }
+  }
+
+}
+
+[global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+public sealed partial class Payload : pb::IMessage<Payload> {
+  private static readonly pb::MessageParser<Payload> _parser = new pb::MessageParser<Payload>(() => new Payload());
+  public static pb::MessageParser<Payload> Parser { get { return _parser; } }
+
+  public static pbr::MessageDescriptor Descriptor {
+    get { return global::PokemonReflection.Descriptor.MessageTypes[2]; }
+  }
+
+  pbr::MessageDescriptor pb::IMessage.Descriptor {
+    get { return Descriptor; }
+  }
+
+  public Payload() {
+    OnConstruction();
+  }
+
+  partial void OnConstruction();
+
+  public Payload(Payload other) : this() {
+    unknown1_ = other.unknown1_;
+    Profile = other.profile_ != null ? other.Profile.Clone() : null;
+  }
+
+  public Payload Clone() {
+    return new Payload(this);
+  }
+
+  /// <summary>Field number for the "unknown1" field.</summary>
+  public const int Unknown1FieldNumber = 1;
+  private int unknown1_;
+  public int Unknown1 {
+    get { return unknown1_; }
+    set {
+      unknown1_ = value;
+    }
+  }
+
+  /// <summary>Field number for the "profile" field.</summary>
+  public const int ProfileFieldNumber = 2;
+  private global::Profile profile_;
+  public global::Profile Profile {
+    get { return profile_; }
+    set {
+      profile_ = value;
+    }
+  }
+
+  public override bool Equals(object other) {
+    return Equals(other as Payload);
+  }
+
+  public bool Equals(Payload other) {
+    if (ReferenceEquals(other, null)) {
+      return false;
+    }
+    if (ReferenceEquals(other, this)) {
+      return true;
+    }
+    if (Unknown1 != other.Unknown1) return false;
+    if (!object.Equals(Profile, other.Profile)) return false;
+    return true;
+  }
+
+  public override int GetHashCode() {
+    int hash = 1;
+    if (Unknown1 != 0) hash ^= Unknown1.GetHashCode();
+    if (profile_ != null) hash ^= Profile.GetHashCode();
+    return hash;
+  }
+
+  public override string ToString() {
+    return pb::JsonFormatter.ToDiagnosticString(this);
+  }
+
+  public void WriteTo(pb::CodedOutputStream output) {
+    if (Unknown1 != 0) {
+      output.WriteRawTag(8);
+      output.WriteInt32(Unknown1);
+    }
+    if (profile_ != null) {
+      output.WriteRawTag(18);
+      output.WriteMessage(Profile);
+    }
+  }
+
+  public int CalculateSize() {
+    int size = 0;
+    if (Unknown1 != 0) {
+      size += 1 + pb::CodedOutputStream.ComputeInt32Size(Unknown1);
+    }
+    if (profile_ != null) {
+      size += 1 + pb::CodedOutputStream.ComputeMessageSize(Profile);
+    }
+    return size;
+  }
+
+  public void MergeFrom(Payload other) {
+    if (other == null) {
+      return;
+    }
+    if (other.Unknown1 != 0) {
+      Unknown1 = other.Unknown1;
+    }
+    if (other.profile_ != null) {
+      if (profile_ == null) {
+        profile_ = new global::Profile();
+      }
+      Profile.MergeFrom(other.Profile);
+    }
+  }
+
+  public void MergeFrom(pb::CodedInputStream input) {
+    uint tag;
+    while ((tag = input.ReadTag()) != 0) {
+      switch(tag) {
+        default:
+          input.SkipLastField();
+          break;
+        case 8: {
+          Unknown1 = input.ReadInt32();
+          break;
+        }
+        case 18: {
+          if (profile_ == null) {
+            profile_ = new global::Profile();
+          }
+          input.ReadMessage(profile_);
+          break;
+        }
+      }
+    }
+  }
+
+}
+
+[global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+public sealed partial class Profile : pb::IMessage<Profile> {
+  private static readonly pb::MessageParser<Profile> _parser = new pb::MessageParser<Profile>(() => new Profile());
+  public static pb::MessageParser<Profile> Parser { get { return _parser; } }
+
+  public static pbr::MessageDescriptor Descriptor {
+    get { return global::PokemonReflection.Descriptor.MessageTypes[3]; }
+  }
+
+  pbr::MessageDescriptor pb::IMessage.Descriptor {
+    get { return Descriptor; }
+  }
+
+  public Profile() {
+    OnConstruction();
+  }
+
+  partial void OnConstruction();
+
+  public Profile(Profile other) : this() {
+    creationTime_ = other.creationTime_;
+    username_ = other.username_;
+    team_ = other.team_;
+    tutorial_ = other.tutorial_;
+    Avatar = other.avatar_ != null ? other.Avatar.Clone() : null;
+    pokeStorage_ = other.pokeStorage_;
+    itemStorage_ = other.itemStorage_;
+    unknown11_ = other.unknown11_;
+    unknown12_ = other.unknown12_;
+    unknown13_ = other.unknown13_;
+    currency_ = other.currency_.Clone();
+  }
+
+  public Profile Clone() {
+    return new Profile(this);
+  }
+
+  /// <summary>Field number for the "creation_time" field.</summary>
+  public const int CreationTimeFieldNumber = 1;
+  private long creationTime_;
+  public long CreationTime {
+    get { return creationTime_; }
+    set {
+      creationTime_ = value;
+    }
+  }
+
+  /// <summary>Field number for the "username" field.</summary>
+  public const int UsernameFieldNumber = 2;
+  private string username_ = "";
+  public string Username {
+    get { return username_; }
+    set {
+      username_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+    }
+  }
+
+  /// <summary>Field number for the "team" field.</summary>
+  public const int TeamFieldNumber = 5;
+  private int team_;
+  public int Team {
+    get { return team_; }
+    set {
+      team_ = value;
+    }
+  }
+
+  /// <summary>Field number for the "tutorial" field.</summary>
+  public const int TutorialFieldNumber = 7;
+  private pb::ByteString tutorial_ = pb::ByteString.Empty;
+  public pb::ByteString Tutorial {
+    get { return tutorial_; }
+    set {
+      tutorial_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+    }
+  }
+
+  /// <summary>Field number for the "avatar" field.</summary>
+  public const int AvatarFieldNumber = 8;
+  private global::Profile.Types.AvatarDetails avatar_;
+  public global::Profile.Types.AvatarDetails Avatar {
+    get { return avatar_; }
+    set {
+      avatar_ = value;
+    }
+  }
+
+  /// <summary>Field number for the "poke_storage" field.</summary>
+  public const int PokeStorageFieldNumber = 9;
+  private int pokeStorage_;
+  public int PokeStorage {
+    get { return pokeStorage_; }
+    set {
+      pokeStorage_ = value;
+    }
+  }
+
+  /// <summary>Field number for the "item_storage" field.</summary>
+  public const int ItemStorageFieldNumber = 10;
+  private int itemStorage_;
+  public int ItemStorage {
+    get { return itemStorage_; }
+    set {
+      itemStorage_ = value;
+    }
+  }
+
+  /// <summary>Field number for the "unknown11" field.</summary>
+  public const int Unknown11FieldNumber = 11;
+  private string unknown11_ = "";
+  public string Unknown11 {
+    get { return unknown11_; }
+    set {
+      unknown11_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+    }
+  }
+
+  /// <summary>Field number for the "unknown12" field.</summary>
+  public const int Unknown12FieldNumber = 12;
+  private string unknown12_ = "";
+  public string Unknown12 {
+    get { return unknown12_; }
+    set {
+      unknown12_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+    }
+  }
+
+  /// <summary>Field number for the "unknown13" field.</summary>
+  public const int Unknown13FieldNumber = 13;
+  private string unknown13_ = "";
+  public string Unknown13 {
+    get { return unknown13_; }
+    set {
+      unknown13_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+    }
+  }
+
+  /// <summary>Field number for the "currency" field.</summary>
+  public const int CurrencyFieldNumber = 14;
+  private static readonly pb::FieldCodec<global::Profile.Types.Currency> _repeated_currency_codec
+      = pb::FieldCodec.ForMessage(114, global::Profile.Types.Currency.Parser);
+  private readonly pbc::RepeatedField<global::Profile.Types.Currency> currency_ = new pbc::RepeatedField<global::Profile.Types.Currency>();
+  public pbc::RepeatedField<global::Profile.Types.Currency> Currency {
+    get { return currency_; }
+  }
+
+  public override bool Equals(object other) {
+    return Equals(other as Profile);
+  }
+
+  public bool Equals(Profile other) {
+    if (ReferenceEquals(other, null)) {
+      return false;
+    }
+    if (ReferenceEquals(other, this)) {
+      return true;
+    }
+    if (CreationTime != other.CreationTime) return false;
+    if (Username != other.Username) return false;
+    if (Team != other.Team) return false;
+    if (Tutorial != other.Tutorial) return false;
+    if (!object.Equals(Avatar, other.Avatar)) return false;
+    if (PokeStorage != other.PokeStorage) return false;
+    if (ItemStorage != other.ItemStorage) return false;
+    if (Unknown11 != other.Unknown11) return false;
+    if (Unknown12 != other.Unknown12) return false;
+    if (Unknown13 != other.Unknown13) return false;
+    if(!currency_.Equals(other.currency_)) return false;
+    return true;
+  }
+
+  public override int GetHashCode() {
+    int hash = 1;
+    if (CreationTime != 0L) hash ^= CreationTime.GetHashCode();
+    if (Username.Length != 0) hash ^= Username.GetHashCode();
+    if (Team != 0) hash ^= Team.GetHashCode();
+    if (Tutorial.Length != 0) hash ^= Tutorial.GetHashCode();
+    if (avatar_ != null) hash ^= Avatar.GetHashCode();
+    if (PokeStorage != 0) hash ^= PokeStorage.GetHashCode();
+    if (ItemStorage != 0) hash ^= ItemStorage.GetHashCode();
+    if (Unknown11.Length != 0) hash ^= Unknown11.GetHashCode();
+    if (Unknown12.Length != 0) hash ^= Unknown12.GetHashCode();
+    if (Unknown13.Length != 0) hash ^= Unknown13.GetHashCode();
+    hash ^= currency_.GetHashCode();
+    return hash;
+  }
+
+  public override string ToString() {
+    return pb::JsonFormatter.ToDiagnosticString(this);
+  }
+
+  public void WriteTo(pb::CodedOutputStream output) {
+    if (CreationTime != 0L) {
+      output.WriteRawTag(8);
+      output.WriteInt64(CreationTime);
+    }
+    if (Username.Length != 0) {
+      output.WriteRawTag(18);
+      output.WriteString(Username);
+    }
+    if (Team != 0) {
+      output.WriteRawTag(40);
+      output.WriteInt32(Team);
+    }
+    if (Tutorial.Length != 0) {
+      output.WriteRawTag(58);
+      output.WriteBytes(Tutorial);
+    }
+    if (avatar_ != null) {
+      output.WriteRawTag(66);
+      output.WriteMessage(Avatar);
+    }
+    if (PokeStorage != 0) {
+      output.WriteRawTag(72);
+      output.WriteInt32(PokeStorage);
+    }
+    if (ItemStorage != 0) {
+      output.WriteRawTag(80);
+      output.WriteInt32(ItemStorage);
+    }
+    if (Unknown11.Length != 0) {
+      output.WriteRawTag(90);
+      output.WriteString(Unknown11);
+    }
+    if (Unknown12.Length != 0) {
+      output.WriteRawTag(98);
+      output.WriteString(Unknown12);
+    }
+    if (Unknown13.Length != 0) {
+      output.WriteRawTag(106);
+      output.WriteString(Unknown13);
+    }
+    currency_.WriteTo(output, _repeated_currency_codec);
+  }
+
+  public int CalculateSize() {
+    int size = 0;
+    if (CreationTime != 0L) {
+      size += 1 + pb::CodedOutputStream.ComputeInt64Size(CreationTime);
+    }
+    if (Username.Length != 0) {
+      size += 1 + pb::CodedOutputStream.ComputeStringSize(Username);
+    }
+    if (Team != 0) {
+      size += 1 + pb::CodedOutputStream.ComputeInt32Size(Team);
+    }
+    if (Tutorial.Length != 0) {
+      size += 1 + pb::CodedOutputStream.ComputeBytesSize(Tutorial);
+    }
+    if (avatar_ != null) {
+      size += 1 + pb::CodedOutputStream.ComputeMessageSize(Avatar);
+    }
+    if (PokeStorage != 0) {
+      size += 1 + pb::CodedOutputStream.ComputeInt32Size(PokeStorage);
+    }
+    if (ItemStorage != 0) {
+      size += 1 + pb::CodedOutputStream.ComputeInt32Size(ItemStorage);
+    }
+    if (Unknown11.Length != 0) {
+      size += 1 + pb::CodedOutputStream.ComputeStringSize(Unknown11);
+    }
+    if (Unknown12.Length != 0) {
+      size += 1 + pb::CodedOutputStream.ComputeStringSize(Unknown12);
+    }
+    if (Unknown13.Length != 0) {
+      size += 1 + pb::CodedOutputStream.ComputeStringSize(Unknown13);
+    }
+    size += currency_.CalculateSize(_repeated_currency_codec);
+    return size;
+  }
+
+  public void MergeFrom(Profile other) {
+    if (other == null) {
+      return;
+    }
+    if (other.CreationTime != 0L) {
+      CreationTime = other.CreationTime;
+    }
+    if (other.Username.Length != 0) {
+      Username = other.Username;
+    }
+    if (other.Team != 0) {
+      Team = other.Team;
+    }
+    if (other.Tutorial.Length != 0) {
+      Tutorial = other.Tutorial;
+    }
+    if (other.avatar_ != null) {
+      if (avatar_ == null) {
+        avatar_ = new global::Profile.Types.AvatarDetails();
+      }
+      Avatar.MergeFrom(other.Avatar);
+    }
+    if (other.PokeStorage != 0) {
+      PokeStorage = other.PokeStorage;
+    }
+    if (other.ItemStorage != 0) {
+      ItemStorage = other.ItemStorage;
+    }
+    if (other.Unknown11.Length != 0) {
+      Unknown11 = other.Unknown11;
+    }
+    if (other.Unknown12.Length != 0) {
+      Unknown12 = other.Unknown12;
+    }
+    if (other.Unknown13.Length != 0) {
+      Unknown13 = other.Unknown13;
+    }
+    currency_.Add(other.currency_);
+  }
+
+  public void MergeFrom(pb::CodedInputStream input) {
+    uint tag;
+    while ((tag = input.ReadTag()) != 0) {
+      switch(tag) {
+        default:
+          input.SkipLastField();
+          break;
+        case 8: {
+          CreationTime = input.ReadInt64();
+          break;
+        }
+        case 18: {
+          Username = input.ReadString();
+          break;
+        }
+        case 40: {
+          Team = input.ReadInt32();
+          break;
+        }
+        case 58: {
+          Tutorial = input.ReadBytes();
+          break;
+        }
+        case 66: {
+          if (avatar_ == null) {
+            avatar_ = new global::Profile.Types.AvatarDetails();
+          }
+          input.ReadMessage(avatar_);
+          break;
+        }
+        case 72: {
+          PokeStorage = input.ReadInt32();
+          break;
+        }
+        case 80: {
+          ItemStorage = input.ReadInt32();
+          break;
+        }
+        case 90: {
+          Unknown11 = input.ReadString();
+          break;
+        }
+        case 98: {
+          Unknown12 = input.ReadString();
+          break;
+        }
+        case 106: {
+          Unknown13 = input.ReadString();
+          break;
+        }
+        case 114: {
+          currency_.AddEntriesFrom(input, _repeated_currency_codec);
+          break;
+        }
+      }
+    }
+  }
+
+  #region Nested types
+  /// <summary>Container for nested types declared in the Profile message type.</summary>
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+  public static partial class Types {
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+    public sealed partial class AvatarDetails : pb::IMessage<AvatarDetails> {
+      private static readonly pb::MessageParser<AvatarDetails> _parser = new pb::MessageParser<AvatarDetails>(() => new AvatarDetails());
+      public static pb::MessageParser<AvatarDetails> Parser { get { return _parser; } }
+
+      public static pbr::MessageDescriptor Descriptor {
+        get { return global::Profile.Descriptor.NestedTypes[0]; }
+      }
+
+      pbr::MessageDescriptor pb::IMessage.Descriptor {
+        get { return Descriptor; }
+      }
+
+      public AvatarDetails() {
+        OnConstruction();
+      }
+
+      partial void OnConstruction();
+
+      public AvatarDetails(AvatarDetails other) : this() {
+        unknown2_ = other.unknown2_;
+        unknown3_ = other.unknown3_;
+        unknown9_ = other.unknown9_;
+        unknown10_ = other.unknown10_;
+      }
+
+      public AvatarDetails Clone() {
+        return new AvatarDetails(this);
+      }
+
+      /// <summary>Field number for the "unknown2" field.</summary>
+      public const int Unknown2FieldNumber = 2;
+      private int unknown2_;
+      public int Unknown2 {
+        get { return unknown2_; }
+        set {
+          unknown2_ = value;
+        }
+      }
+
+      /// <summary>Field number for the "unknown3" field.</summary>
+      public const int Unknown3FieldNumber = 3;
+      private int unknown3_;
+      public int Unknown3 {
+        get { return unknown3_; }
+        set {
+          unknown3_ = value;
+        }
+      }
+
+      /// <summary>Field number for the "unknown9" field.</summary>
+      public const int Unknown9FieldNumber = 9;
+      private int unknown9_;
+      public int Unknown9 {
+        get { return unknown9_; }
+        set {
+          unknown9_ = value;
+        }
+      }
+
+      /// <summary>Field number for the "unknown10" field.</summary>
+      public const int Unknown10FieldNumber = 10;
+      private int unknown10_;
+      public int Unknown10 {
+        get { return unknown10_; }
+        set {
+          unknown10_ = value;
+        }
+      }
+
+      public override bool Equals(object other) {
+        return Equals(other as AvatarDetails);
+      }
+
+      public bool Equals(AvatarDetails other) {
+        if (ReferenceEquals(other, null)) {
+          return false;
+        }
+        if (ReferenceEquals(other, this)) {
+          return true;
+        }
+        if (Unknown2 != other.Unknown2) return false;
+        if (Unknown3 != other.Unknown3) return false;
+        if (Unknown9 != other.Unknown9) return false;
+        if (Unknown10 != other.Unknown10) return false;
+        return true;
+      }
+
+      public override int GetHashCode() {
+        int hash = 1;
+        if (Unknown2 != 0) hash ^= Unknown2.GetHashCode();
+        if (Unknown3 != 0) hash ^= Unknown3.GetHashCode();
+        if (Unknown9 != 0) hash ^= Unknown9.GetHashCode();
+        if (Unknown10 != 0) hash ^= Unknown10.GetHashCode();
+        return hash;
+      }
+
+      public override string ToString() {
+        return pb::JsonFormatter.ToDiagnosticString(this);
+      }
+
+      public void WriteTo(pb::CodedOutputStream output) {
+        if (Unknown2 != 0) {
+          output.WriteRawTag(16);
+          output.WriteInt32(Unknown2);
+        }
+        if (Unknown3 != 0) {
+          output.WriteRawTag(24);
+          output.WriteInt32(Unknown3);
+        }
+        if (Unknown9 != 0) {
+          output.WriteRawTag(72);
+          output.WriteInt32(Unknown9);
+        }
+        if (Unknown10 != 0) {
+          output.WriteRawTag(80);
+          output.WriteInt32(Unknown10);
+        }
+      }
+
+      public int CalculateSize() {
+        int size = 0;
+        if (Unknown2 != 0) {
+          size += 1 + pb::CodedOutputStream.ComputeInt32Size(Unknown2);
+        }
+        if (Unknown3 != 0) {
+          size += 1 + pb::CodedOutputStream.ComputeInt32Size(Unknown3);
+        }
+        if (Unknown9 != 0) {
+          size += 1 + pb::CodedOutputStream.ComputeInt32Size(Unknown9);
+        }
+        if (Unknown10 != 0) {
+          size += 1 + pb::CodedOutputStream.ComputeInt32Size(Unknown10);
+        }
+        return size;
+      }
+
+      public void MergeFrom(AvatarDetails other) {
+        if (other == null) {
+          return;
+        }
+        if (other.Unknown2 != 0) {
+          Unknown2 = other.Unknown2;
+        }
+        if (other.Unknown3 != 0) {
+          Unknown3 = other.Unknown3;
+        }
+        if (other.Unknown9 != 0) {
+          Unknown9 = other.Unknown9;
+        }
+        if (other.Unknown10 != 0) {
+          Unknown10 = other.Unknown10;
+        }
+      }
+
+      public void MergeFrom(pb::CodedInputStream input) {
+        uint tag;
+        while ((tag = input.ReadTag()) != 0) {
+          switch(tag) {
+            default:
+              input.SkipLastField();
+              break;
+            case 16: {
+              Unknown2 = input.ReadInt32();
+              break;
+            }
+            case 24: {
+              Unknown3 = input.ReadInt32();
+              break;
+            }
+            case 72: {
+              Unknown9 = input.ReadInt32();
+              break;
+            }
+            case 80: {
+              Unknown10 = input.ReadInt32();
+              break;
+            }
+          }
+        }
+      }
+
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+    public sealed partial class Currency : pb::IMessage<Currency> {
+      private static readonly pb::MessageParser<Currency> _parser = new pb::MessageParser<Currency>(() => new Currency());
+      public static pb::MessageParser<Currency> Parser { get { return _parser; } }
+
+      public static pbr::MessageDescriptor Descriptor {
+        get { return global::Profile.Descriptor.NestedTypes[1]; }
+      }
+
+      pbr::MessageDescriptor pb::IMessage.Descriptor {
+        get { return Descriptor; }
+      }
+
+      public Currency() {
+        OnConstruction();
+      }
+
+      partial void OnConstruction();
+
+      public Currency(Currency other) : this() {
+        type_ = other.type_;
+        amount_ = other.amount_;
+      }
+
+      public Currency Clone() {
+        return new Currency(this);
+      }
+
+      /// <summary>Field number for the "type" field.</summary>
+      public const int TypeFieldNumber = 1;
+      private string type_ = "";
+      public string Type {
+        get { return type_; }
+        set {
+          type_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+        }
+      }
+
+      /// <summary>Field number for the "amount" field.</summary>
+      public const int AmountFieldNumber = 2;
+      private int amount_;
+      public int Amount {
+        get { return amount_; }
+        set {
+          amount_ = value;
+        }
+      }
+
+      public override bool Equals(object other) {
+        return Equals(other as Currency);
+      }
+
+      public bool Equals(Currency other) {
+        if (ReferenceEquals(other, null)) {
+          return false;
+        }
+        if (ReferenceEquals(other, this)) {
+          return true;
+        }
+        if (Type != other.Type) return false;
+        if (Amount != other.Amount) return false;
+        return true;
+      }
+
+      public override int GetHashCode() {
+        int hash = 1;
+        if (Type.Length != 0) hash ^= Type.GetHashCode();
+        if (Amount != 0) hash ^= Amount.GetHashCode();
+        return hash;
+      }
+
+      public override string ToString() {
+        return pb::JsonFormatter.ToDiagnosticString(this);
+      }
+
+      public void WriteTo(pb::CodedOutputStream output) {
+        if (Type.Length != 0) {
+          output.WriteRawTag(10);
+          output.WriteString(Type);
+        }
+        if (Amount != 0) {
+          output.WriteRawTag(16);
+          output.WriteInt32(Amount);
+        }
+      }
+
+      public int CalculateSize() {
+        int size = 0;
+        if (Type.Length != 0) {
+          size += 1 + pb::CodedOutputStream.ComputeStringSize(Type);
+        }
+        if (Amount != 0) {
+          size += 1 + pb::CodedOutputStream.ComputeInt32Size(Amount);
+        }
+        return size;
+      }
+
+      public void MergeFrom(Currency other) {
+        if (other == null) {
+          return;
+        }
+        if (other.Type.Length != 0) {
+          Type = other.Type;
+        }
+        if (other.Amount != 0) {
+          Amount = other.Amount;
+        }
+      }
+
+      public void MergeFrom(pb::CodedInputStream input) {
+        uint tag;
+        while ((tag = input.ReadTag()) != 0) {
+          switch(tag) {
+            default:
+              input.SkipLastField();
+              break;
+            case 10: {
+              Type = input.ReadString();
+              break;
+            }
+            case 16: {
+              Amount = input.ReadInt32();
+              break;
+            }
+          }
+        }
+      }
+
+    }
+
+  }
+  #endregion
+
+}
+
+[global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
 public sealed partial class ResponseEnvelop : pb::IMessage<ResponseEnvelop> {
   private static readonly pb::MessageParser<ResponseEnvelop> _parser = new pb::MessageParser<ResponseEnvelop>(() => new ResponseEnvelop());
   public static pb::MessageParser<ResponseEnvelop> Parser { get { return _parser; } }
 
   public static pbr::MessageDescriptor Descriptor {
-    get { return global::PokemonReflection.Descriptor.MessageTypes[1]; }
+    get { return global::PokemonReflection.Descriptor.MessageTypes[4]; }
   }
 
   pbr::MessageDescriptor pb::IMessage.Descriptor {
@@ -1235,8 +3020,8 @@ public sealed partial class ResponseEnvelop : pb::IMessage<ResponseEnvelop> {
 
   /// <summary>Field number for the "unknown7" field.</summary>
   public const int Unknown7FieldNumber = 7;
-  private global::ResponseEnvelop.Types.Unknown7 unknown7_;
-  public global::ResponseEnvelop.Types.Unknown7 Unknown7 {
+  private global::UnknownAuth unknown7_;
+  public global::UnknownAuth Unknown7 {
     get { return unknown7_; }
     set {
       unknown7_ = value;
@@ -1245,10 +3030,10 @@ public sealed partial class ResponseEnvelop : pb::IMessage<ResponseEnvelop> {
 
   /// <summary>Field number for the "payload" field.</summary>
   public const int PayloadFieldNumber = 100;
-  private static readonly pb::FieldCodec<global::ResponseEnvelop.Types.Payload> _repeated_payload_codec
-      = pb::FieldCodec.ForMessage(802, global::ResponseEnvelop.Types.Payload.Parser);
-  private readonly pbc::RepeatedField<global::ResponseEnvelop.Types.Payload> payload_ = new pbc::RepeatedField<global::ResponseEnvelop.Types.Payload>();
-  public pbc::RepeatedField<global::ResponseEnvelop.Types.Payload> Payload {
+  private static readonly pb::FieldCodec<global::Payload> _repeated_payload_codec
+      = pb::FieldCodec.ForMessage(802, global::Payload.Parser);
+  private readonly pbc::RepeatedField<global::Payload> payload_ = new pbc::RepeatedField<global::Payload>();
+  public pbc::RepeatedField<global::Payload> Payload {
     get { return payload_; }
   }
 
@@ -1353,7 +3138,7 @@ public sealed partial class ResponseEnvelop : pb::IMessage<ResponseEnvelop> {
     }
     if (other.unknown7_ != null) {
       if (unknown7_ == null) {
-        unknown7_ = new global::ResponseEnvelop.Types.Unknown7();
+        unknown7_ = new global::UnknownAuth();
       }
       Unknown7.MergeFrom(other.Unknown7);
     }
@@ -1388,7 +3173,7 @@ public sealed partial class ResponseEnvelop : pb::IMessage<ResponseEnvelop> {
         }
         case 58: {
           if (unknown7_ == null) {
-            unknown7_ = new global::ResponseEnvelop.Types.Unknown7();
+            unknown7_ = new global::UnknownAuth();
           }
           input.ReadMessage(unknown7_);
           break;
@@ -1652,9 +3437,9 @@ public sealed partial class ResponseEnvelop : pb::IMessage<ResponseEnvelop> {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-    public sealed partial class Unknown7 : pb::IMessage<Unknown7> {
-      private static readonly pb::MessageParser<Unknown7> _parser = new pb::MessageParser<Unknown7>(() => new Unknown7());
-      public static pb::MessageParser<Unknown7> Parser { get { return _parser; } }
+    public sealed partial class HeartbeatPayload : pb::IMessage<HeartbeatPayload> {
+      private static readonly pb::MessageParser<HeartbeatPayload> _parser = new pb::MessageParser<HeartbeatPayload>(() => new HeartbeatPayload());
+      public static pb::MessageParser<HeartbeatPayload> Parser { get { return _parser; } }
 
       public static pbr::MessageDescriptor Descriptor {
         get { return global::ResponseEnvelop.Descriptor.NestedTypes[1]; }
@@ -1664,74 +3449,47 @@ public sealed partial class ResponseEnvelop : pb::IMessage<ResponseEnvelop> {
         get { return Descriptor; }
       }
 
-      public Unknown7() {
+      public HeartbeatPayload() {
         OnConstruction();
       }
 
       partial void OnConstruction();
 
-      public Unknown7(Unknown7 other) : this() {
-        unknown71_ = other.unknown71_;
-        unknown72_ = other.unknown72_;
-        unknown73_ = other.unknown73_;
+      public HeartbeatPayload(HeartbeatPayload other) : this() {
+        cells_ = other.cells_.Clone();
       }
 
-      public Unknown7 Clone() {
-        return new Unknown7(this);
+      public HeartbeatPayload Clone() {
+        return new HeartbeatPayload(this);
       }
 
-      /// <summary>Field number for the "unknown71" field.</summary>
-      public const int Unknown71FieldNumber = 1;
-      private pb::ByteString unknown71_ = pb::ByteString.Empty;
-      public pb::ByteString Unknown71 {
-        get { return unknown71_; }
-        set {
-          unknown71_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
-        }
-      }
-
-      /// <summary>Field number for the "unknown72" field.</summary>
-      public const int Unknown72FieldNumber = 2;
-      private long unknown72_;
-      public long Unknown72 {
-        get { return unknown72_; }
-        set {
-          unknown72_ = value;
-        }
-      }
-
-      /// <summary>Field number for the "unknown73" field.</summary>
-      public const int Unknown73FieldNumber = 3;
-      private pb::ByteString unknown73_ = pb::ByteString.Empty;
-      public pb::ByteString Unknown73 {
-        get { return unknown73_; }
-        set {
-          unknown73_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
-        }
+      /// <summary>Field number for the "cells" field.</summary>
+      public const int CellsFieldNumber = 1;
+      private static readonly pb::FieldCodec<global::ResponseEnvelop.Types.ClientMapCell> _repeated_cells_codec
+          = pb::FieldCodec.ForMessage(10, global::ResponseEnvelop.Types.ClientMapCell.Parser);
+      private readonly pbc::RepeatedField<global::ResponseEnvelop.Types.ClientMapCell> cells_ = new pbc::RepeatedField<global::ResponseEnvelop.Types.ClientMapCell>();
+      public pbc::RepeatedField<global::ResponseEnvelop.Types.ClientMapCell> Cells {
+        get { return cells_; }
       }
 
       public override bool Equals(object other) {
-        return Equals(other as Unknown7);
+        return Equals(other as HeartbeatPayload);
       }
 
-      public bool Equals(Unknown7 other) {
+      public bool Equals(HeartbeatPayload other) {
         if (ReferenceEquals(other, null)) {
           return false;
         }
         if (ReferenceEquals(other, this)) {
           return true;
         }
-        if (Unknown71 != other.Unknown71) return false;
-        if (Unknown72 != other.Unknown72) return false;
-        if (Unknown73 != other.Unknown73) return false;
+        if(!cells_.Equals(other.cells_)) return false;
         return true;
       }
 
       public override int GetHashCode() {
         int hash = 1;
-        if (Unknown71.Length != 0) hash ^= Unknown71.GetHashCode();
-        if (Unknown72 != 0L) hash ^= Unknown72.GetHashCode();
-        if (Unknown73.Length != 0) hash ^= Unknown73.GetHashCode();
+        hash ^= cells_.GetHashCode();
         return hash;
       }
 
@@ -1740,46 +3498,685 @@ public sealed partial class ResponseEnvelop : pb::IMessage<ResponseEnvelop> {
       }
 
       public void WriteTo(pb::CodedOutputStream output) {
-        if (Unknown71.Length != 0) {
-          output.WriteRawTag(10);
-          output.WriteBytes(Unknown71);
+        cells_.WriteTo(output, _repeated_cells_codec);
+      }
+
+      public int CalculateSize() {
+        int size = 0;
+        size += cells_.CalculateSize(_repeated_cells_codec);
+        return size;
+      }
+
+      public void MergeFrom(HeartbeatPayload other) {
+        if (other == null) {
+          return;
         }
-        if (Unknown72 != 0L) {
+        cells_.Add(other.cells_);
+      }
+
+      public void MergeFrom(pb::CodedInputStream input) {
+        uint tag;
+        while ((tag = input.ReadTag()) != 0) {
+          switch(tag) {
+            default:
+              input.SkipLastField();
+              break;
+            case 10: {
+              cells_.AddEntriesFrom(input, _repeated_cells_codec);
+              break;
+            }
+          }
+        }
+      }
+
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+    public sealed partial class ClientMapCell : pb::IMessage<ClientMapCell> {
+      private static readonly pb::MessageParser<ClientMapCell> _parser = new pb::MessageParser<ClientMapCell>(() => new ClientMapCell());
+      public static pb::MessageParser<ClientMapCell> Parser { get { return _parser; } }
+
+      public static pbr::MessageDescriptor Descriptor {
+        get { return global::ResponseEnvelop.Descriptor.NestedTypes[2]; }
+      }
+
+      pbr::MessageDescriptor pb::IMessage.Descriptor {
+        get { return Descriptor; }
+      }
+
+      public ClientMapCell() {
+        OnConstruction();
+      }
+
+      partial void OnConstruction();
+
+      public ClientMapCell(ClientMapCell other) : this() {
+        s2CellId_ = other.s2CellId_;
+        asOfTimeMs_ = other.asOfTimeMs_;
+        fort_ = other.fort_.Clone();
+        spawnPoint_ = other.spawnPoint_.Clone();
+        wildPokemon_ = other.wildPokemon_.Clone();
+        isTruncatedList_ = other.isTruncatedList_;
+        fortSummary_ = other.fortSummary_.Clone();
+        decimatedSpawnPoint_ = other.decimatedSpawnPoint_.Clone();
+        mapPokemon_ = other.mapPokemon_.Clone();
+        nearbyPokemon_ = other.nearbyPokemon_.Clone();
+      }
+
+      public ClientMapCell Clone() {
+        return new ClientMapCell(this);
+      }
+
+      /// <summary>Field number for the "S2CellId" field.</summary>
+      public const int S2CellIdFieldNumber = 1;
+      private ulong s2CellId_;
+      public ulong S2CellId {
+        get { return s2CellId_; }
+        set {
+          s2CellId_ = value;
+        }
+      }
+
+      /// <summary>Field number for the "AsOfTimeMs" field.</summary>
+      public const int AsOfTimeMsFieldNumber = 2;
+      private long asOfTimeMs_;
+      public long AsOfTimeMs {
+        get { return asOfTimeMs_; }
+        set {
+          asOfTimeMs_ = value;
+        }
+      }
+
+      /// <summary>Field number for the "Fort" field.</summary>
+      public const int FortFieldNumber = 3;
+      private static readonly pb::FieldCodec<global::ResponseEnvelop.Types.PokemonFortProto> _repeated_fort_codec
+          = pb::FieldCodec.ForMessage(26, global::ResponseEnvelop.Types.PokemonFortProto.Parser);
+      private readonly pbc::RepeatedField<global::ResponseEnvelop.Types.PokemonFortProto> fort_ = new pbc::RepeatedField<global::ResponseEnvelop.Types.PokemonFortProto>();
+      public pbc::RepeatedField<global::ResponseEnvelop.Types.PokemonFortProto> Fort {
+        get { return fort_; }
+      }
+
+      /// <summary>Field number for the "SpawnPoint" field.</summary>
+      public const int SpawnPointFieldNumber = 4;
+      private static readonly pb::FieldCodec<global::ResponseEnvelop.Types.ClientSpawnPointProto> _repeated_spawnPoint_codec
+          = pb::FieldCodec.ForMessage(34, global::ResponseEnvelop.Types.ClientSpawnPointProto.Parser);
+      private readonly pbc::RepeatedField<global::ResponseEnvelop.Types.ClientSpawnPointProto> spawnPoint_ = new pbc::RepeatedField<global::ResponseEnvelop.Types.ClientSpawnPointProto>();
+      public pbc::RepeatedField<global::ResponseEnvelop.Types.ClientSpawnPointProto> SpawnPoint {
+        get { return spawnPoint_; }
+      }
+
+      /// <summary>Field number for the "WildPokemon" field.</summary>
+      public const int WildPokemonFieldNumber = 5;
+      private static readonly pb::FieldCodec<global::ResponseEnvelop.Types.WildPokemonProto> _repeated_wildPokemon_codec
+          = pb::FieldCodec.ForMessage(42, global::ResponseEnvelop.Types.WildPokemonProto.Parser);
+      private readonly pbc::RepeatedField<global::ResponseEnvelop.Types.WildPokemonProto> wildPokemon_ = new pbc::RepeatedField<global::ResponseEnvelop.Types.WildPokemonProto>();
+      public pbc::RepeatedField<global::ResponseEnvelop.Types.WildPokemonProto> WildPokemon {
+        get { return wildPokemon_; }
+      }
+
+      /// <summary>Field number for the "IsTruncatedList" field.</summary>
+      public const int IsTruncatedListFieldNumber = 7;
+      private bool isTruncatedList_;
+      /// <summary>
+      /// unknown DeletedObject = 6;
+      /// </summary>
+      public bool IsTruncatedList {
+        get { return isTruncatedList_; }
+        set {
+          isTruncatedList_ = value;
+        }
+      }
+
+      /// <summary>Field number for the "FortSummary" field.</summary>
+      public const int FortSummaryFieldNumber = 8;
+      private static readonly pb::FieldCodec<global::ResponseEnvelop.Types.PokemonSummaryFortProto> _repeated_fortSummary_codec
+          = pb::FieldCodec.ForMessage(66, global::ResponseEnvelop.Types.PokemonSummaryFortProto.Parser);
+      private readonly pbc::RepeatedField<global::ResponseEnvelop.Types.PokemonSummaryFortProto> fortSummary_ = new pbc::RepeatedField<global::ResponseEnvelop.Types.PokemonSummaryFortProto>();
+      public pbc::RepeatedField<global::ResponseEnvelop.Types.PokemonSummaryFortProto> FortSummary {
+        get { return fortSummary_; }
+      }
+
+      /// <summary>Field number for the "DecimatedSpawnPoint" field.</summary>
+      public const int DecimatedSpawnPointFieldNumber = 9;
+      private static readonly pb::FieldCodec<global::ResponseEnvelop.Types.ClientSpawnPointProto> _repeated_decimatedSpawnPoint_codec
+          = pb::FieldCodec.ForMessage(74, global::ResponseEnvelop.Types.ClientSpawnPointProto.Parser);
+      private readonly pbc::RepeatedField<global::ResponseEnvelop.Types.ClientSpawnPointProto> decimatedSpawnPoint_ = new pbc::RepeatedField<global::ResponseEnvelop.Types.ClientSpawnPointProto>();
+      public pbc::RepeatedField<global::ResponseEnvelop.Types.ClientSpawnPointProto> DecimatedSpawnPoint {
+        get { return decimatedSpawnPoint_; }
+      }
+
+      /// <summary>Field number for the "MapPokemon" field.</summary>
+      public const int MapPokemonFieldNumber = 10;
+      private static readonly pb::FieldCodec<global::ResponseEnvelop.Types.MapPokemonProto> _repeated_mapPokemon_codec
+          = pb::FieldCodec.ForMessage(82, global::ResponseEnvelop.Types.MapPokemonProto.Parser);
+      private readonly pbc::RepeatedField<global::ResponseEnvelop.Types.MapPokemonProto> mapPokemon_ = new pbc::RepeatedField<global::ResponseEnvelop.Types.MapPokemonProto>();
+      public pbc::RepeatedField<global::ResponseEnvelop.Types.MapPokemonProto> MapPokemon {
+        get { return mapPokemon_; }
+      }
+
+      /// <summary>Field number for the "NearbyPokemon" field.</summary>
+      public const int NearbyPokemonFieldNumber = 11;
+      private static readonly pb::FieldCodec<global::ResponseEnvelop.Types.NearbyPokemonProto> _repeated_nearbyPokemon_codec
+          = pb::FieldCodec.ForMessage(90, global::ResponseEnvelop.Types.NearbyPokemonProto.Parser);
+      private readonly pbc::RepeatedField<global::ResponseEnvelop.Types.NearbyPokemonProto> nearbyPokemon_ = new pbc::RepeatedField<global::ResponseEnvelop.Types.NearbyPokemonProto>();
+      public pbc::RepeatedField<global::ResponseEnvelop.Types.NearbyPokemonProto> NearbyPokemon {
+        get { return nearbyPokemon_; }
+      }
+
+      public override bool Equals(object other) {
+        return Equals(other as ClientMapCell);
+      }
+
+      public bool Equals(ClientMapCell other) {
+        if (ReferenceEquals(other, null)) {
+          return false;
+        }
+        if (ReferenceEquals(other, this)) {
+          return true;
+        }
+        if (S2CellId != other.S2CellId) return false;
+        if (AsOfTimeMs != other.AsOfTimeMs) return false;
+        if(!fort_.Equals(other.fort_)) return false;
+        if(!spawnPoint_.Equals(other.spawnPoint_)) return false;
+        if(!wildPokemon_.Equals(other.wildPokemon_)) return false;
+        if (IsTruncatedList != other.IsTruncatedList) return false;
+        if(!fortSummary_.Equals(other.fortSummary_)) return false;
+        if(!decimatedSpawnPoint_.Equals(other.decimatedSpawnPoint_)) return false;
+        if(!mapPokemon_.Equals(other.mapPokemon_)) return false;
+        if(!nearbyPokemon_.Equals(other.nearbyPokemon_)) return false;
+        return true;
+      }
+
+      public override int GetHashCode() {
+        int hash = 1;
+        if (S2CellId != 0UL) hash ^= S2CellId.GetHashCode();
+        if (AsOfTimeMs != 0L) hash ^= AsOfTimeMs.GetHashCode();
+        hash ^= fort_.GetHashCode();
+        hash ^= spawnPoint_.GetHashCode();
+        hash ^= wildPokemon_.GetHashCode();
+        if (IsTruncatedList != false) hash ^= IsTruncatedList.GetHashCode();
+        hash ^= fortSummary_.GetHashCode();
+        hash ^= decimatedSpawnPoint_.GetHashCode();
+        hash ^= mapPokemon_.GetHashCode();
+        hash ^= nearbyPokemon_.GetHashCode();
+        return hash;
+      }
+
+      public override string ToString() {
+        return pb::JsonFormatter.ToDiagnosticString(this);
+      }
+
+      public void WriteTo(pb::CodedOutputStream output) {
+        if (S2CellId != 0UL) {
+          output.WriteRawTag(8);
+          output.WriteUInt64(S2CellId);
+        }
+        if (AsOfTimeMs != 0L) {
           output.WriteRawTag(16);
-          output.WriteInt64(Unknown72);
+          output.WriteInt64(AsOfTimeMs);
         }
-        if (Unknown73.Length != 0) {
-          output.WriteRawTag(26);
-          output.WriteBytes(Unknown73);
+        fort_.WriteTo(output, _repeated_fort_codec);
+        spawnPoint_.WriteTo(output, _repeated_spawnPoint_codec);
+        wildPokemon_.WriteTo(output, _repeated_wildPokemon_codec);
+        if (IsTruncatedList != false) {
+          output.WriteRawTag(56);
+          output.WriteBool(IsTruncatedList);
+        }
+        fortSummary_.WriteTo(output, _repeated_fortSummary_codec);
+        decimatedSpawnPoint_.WriteTo(output, _repeated_decimatedSpawnPoint_codec);
+        mapPokemon_.WriteTo(output, _repeated_mapPokemon_codec);
+        nearbyPokemon_.WriteTo(output, _repeated_nearbyPokemon_codec);
+      }
+
+      public int CalculateSize() {
+        int size = 0;
+        if (S2CellId != 0UL) {
+          size += 1 + pb::CodedOutputStream.ComputeUInt64Size(S2CellId);
+        }
+        if (AsOfTimeMs != 0L) {
+          size += 1 + pb::CodedOutputStream.ComputeInt64Size(AsOfTimeMs);
+        }
+        size += fort_.CalculateSize(_repeated_fort_codec);
+        size += spawnPoint_.CalculateSize(_repeated_spawnPoint_codec);
+        size += wildPokemon_.CalculateSize(_repeated_wildPokemon_codec);
+        if (IsTruncatedList != false) {
+          size += 1 + 1;
+        }
+        size += fortSummary_.CalculateSize(_repeated_fortSummary_codec);
+        size += decimatedSpawnPoint_.CalculateSize(_repeated_decimatedSpawnPoint_codec);
+        size += mapPokemon_.CalculateSize(_repeated_mapPokemon_codec);
+        size += nearbyPokemon_.CalculateSize(_repeated_nearbyPokemon_codec);
+        return size;
+      }
+
+      public void MergeFrom(ClientMapCell other) {
+        if (other == null) {
+          return;
+        }
+        if (other.S2CellId != 0UL) {
+          S2CellId = other.S2CellId;
+        }
+        if (other.AsOfTimeMs != 0L) {
+          AsOfTimeMs = other.AsOfTimeMs;
+        }
+        fort_.Add(other.fort_);
+        spawnPoint_.Add(other.spawnPoint_);
+        wildPokemon_.Add(other.wildPokemon_);
+        if (other.IsTruncatedList != false) {
+          IsTruncatedList = other.IsTruncatedList;
+        }
+        fortSummary_.Add(other.fortSummary_);
+        decimatedSpawnPoint_.Add(other.decimatedSpawnPoint_);
+        mapPokemon_.Add(other.mapPokemon_);
+        nearbyPokemon_.Add(other.nearbyPokemon_);
+      }
+
+      public void MergeFrom(pb::CodedInputStream input) {
+        uint tag;
+        while ((tag = input.ReadTag()) != 0) {
+          switch(tag) {
+            default:
+              input.SkipLastField();
+              break;
+            case 8: {
+              S2CellId = input.ReadUInt64();
+              break;
+            }
+            case 16: {
+              AsOfTimeMs = input.ReadInt64();
+              break;
+            }
+            case 26: {
+              fort_.AddEntriesFrom(input, _repeated_fort_codec);
+              break;
+            }
+            case 34: {
+              spawnPoint_.AddEntriesFrom(input, _repeated_spawnPoint_codec);
+              break;
+            }
+            case 42: {
+              wildPokemon_.AddEntriesFrom(input, _repeated_wildPokemon_codec);
+              break;
+            }
+            case 56: {
+              IsTruncatedList = input.ReadBool();
+              break;
+            }
+            case 66: {
+              fortSummary_.AddEntriesFrom(input, _repeated_fortSummary_codec);
+              break;
+            }
+            case 74: {
+              decimatedSpawnPoint_.AddEntriesFrom(input, _repeated_decimatedSpawnPoint_codec);
+              break;
+            }
+            case 82: {
+              mapPokemon_.AddEntriesFrom(input, _repeated_mapPokemon_codec);
+              break;
+            }
+            case 90: {
+              nearbyPokemon_.AddEntriesFrom(input, _repeated_nearbyPokemon_codec);
+              break;
+            }
+          }
+        }
+      }
+
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+    public sealed partial class WildPokemon : pb::IMessage<WildPokemon> {
+      private static readonly pb::MessageParser<WildPokemon> _parser = new pb::MessageParser<WildPokemon>(() => new WildPokemon());
+      public static pb::MessageParser<WildPokemon> Parser { get { return _parser; } }
+
+      public static pbr::MessageDescriptor Descriptor {
+        get { return global::ResponseEnvelop.Descriptor.NestedTypes[3]; }
+      }
+
+      pbr::MessageDescriptor pb::IMessage.Descriptor {
+        get { return Descriptor; }
+      }
+
+      public WildPokemon() {
+        OnConstruction();
+      }
+
+      partial void OnConstruction();
+
+      public WildPokemon(WildPokemon other) : this() {
+        uniqueId_ = other.uniqueId_;
+        pokemonId_ = other.pokemonId_;
+        pokemon_ = other.pokemon_.Clone();
+      }
+
+      public WildPokemon Clone() {
+        return new WildPokemon(this);
+      }
+
+      /// <summary>Field number for the "UniqueId" field.</summary>
+      public const int UniqueIdFieldNumber = 1;
+      private string uniqueId_ = "";
+      public string UniqueId {
+        get { return uniqueId_; }
+        set {
+          uniqueId_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+        }
+      }
+
+      /// <summary>Field number for the "PokemonId" field.</summary>
+      public const int PokemonIdFieldNumber = 2;
+      private string pokemonId_ = "";
+      public string PokemonId {
+        get { return pokemonId_; }
+        set {
+          pokemonId_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+        }
+      }
+
+      /// <summary>Field number for the "pokemon" field.</summary>
+      public const int PokemonFieldNumber = 11;
+      private static readonly pb::FieldCodec<global::ResponseEnvelop.Types.NearbyPokemonProto> _repeated_pokemon_codec
+          = pb::FieldCodec.ForMessage(90, global::ResponseEnvelop.Types.NearbyPokemonProto.Parser);
+      private readonly pbc::RepeatedField<global::ResponseEnvelop.Types.NearbyPokemonProto> pokemon_ = new pbc::RepeatedField<global::ResponseEnvelop.Types.NearbyPokemonProto>();
+      /// <summary>
+      ///  int64 three = 3;
+      ///  float four = 4;
+      ///  int32 five = 5;
+      ///  unknown six = 6;
+      /// </summary>
+      public pbc::RepeatedField<global::ResponseEnvelop.Types.NearbyPokemonProto> Pokemon {
+        get { return pokemon_; }
+      }
+
+      public override bool Equals(object other) {
+        return Equals(other as WildPokemon);
+      }
+
+      public bool Equals(WildPokemon other) {
+        if (ReferenceEquals(other, null)) {
+          return false;
+        }
+        if (ReferenceEquals(other, this)) {
+          return true;
+        }
+        if (UniqueId != other.UniqueId) return false;
+        if (PokemonId != other.PokemonId) return false;
+        if(!pokemon_.Equals(other.pokemon_)) return false;
+        return true;
+      }
+
+      public override int GetHashCode() {
+        int hash = 1;
+        if (UniqueId.Length != 0) hash ^= UniqueId.GetHashCode();
+        if (PokemonId.Length != 0) hash ^= PokemonId.GetHashCode();
+        hash ^= pokemon_.GetHashCode();
+        return hash;
+      }
+
+      public override string ToString() {
+        return pb::JsonFormatter.ToDiagnosticString(this);
+      }
+
+      public void WriteTo(pb::CodedOutputStream output) {
+        if (UniqueId.Length != 0) {
+          output.WriteRawTag(10);
+          output.WriteString(UniqueId);
+        }
+        if (PokemonId.Length != 0) {
+          output.WriteRawTag(18);
+          output.WriteString(PokemonId);
+        }
+        pokemon_.WriteTo(output, _repeated_pokemon_codec);
+      }
+
+      public int CalculateSize() {
+        int size = 0;
+        if (UniqueId.Length != 0) {
+          size += 1 + pb::CodedOutputStream.ComputeStringSize(UniqueId);
+        }
+        if (PokemonId.Length != 0) {
+          size += 1 + pb::CodedOutputStream.ComputeStringSize(PokemonId);
+        }
+        size += pokemon_.CalculateSize(_repeated_pokemon_codec);
+        return size;
+      }
+
+      public void MergeFrom(WildPokemon other) {
+        if (other == null) {
+          return;
+        }
+        if (other.UniqueId.Length != 0) {
+          UniqueId = other.UniqueId;
+        }
+        if (other.PokemonId.Length != 0) {
+          PokemonId = other.PokemonId;
+        }
+        pokemon_.Add(other.pokemon_);
+      }
+
+      public void MergeFrom(pb::CodedInputStream input) {
+        uint tag;
+        while ((tag = input.ReadTag()) != 0) {
+          switch(tag) {
+            default:
+              input.SkipLastField();
+              break;
+            case 10: {
+              UniqueId = input.ReadString();
+              break;
+            }
+            case 18: {
+              PokemonId = input.ReadString();
+              break;
+            }
+            case 90: {
+              pokemon_.AddEntriesFrom(input, _repeated_pokemon_codec);
+              break;
+            }
+          }
+        }
+      }
+
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+    public sealed partial class MapPokemonProto : pb::IMessage<MapPokemonProto> {
+      private static readonly pb::MessageParser<MapPokemonProto> _parser = new pb::MessageParser<MapPokemonProto>(() => new MapPokemonProto());
+      public static pb::MessageParser<MapPokemonProto> Parser { get { return _parser; } }
+
+      public static pbr::MessageDescriptor Descriptor {
+        get { return global::ResponseEnvelop.Descriptor.NestedTypes[4]; }
+      }
+
+      pbr::MessageDescriptor pb::IMessage.Descriptor {
+        get { return Descriptor; }
+      }
+
+      public MapPokemonProto() {
+        OnConstruction();
+      }
+
+      partial void OnConstruction();
+
+      public MapPokemonProto(MapPokemonProto other) : this() {
+        spawnpointId_ = other.spawnpointId_;
+        encounterId_ = other.encounterId_;
+        pokedexTypeId_ = other.pokedexTypeId_;
+        expirationTimeMs_ = other.expirationTimeMs_;
+        latitude_ = other.latitude_;
+        longitude_ = other.longitude_;
+      }
+
+      public MapPokemonProto Clone() {
+        return new MapPokemonProto(this);
+      }
+
+      /// <summary>Field number for the "SpawnpointId" field.</summary>
+      public const int SpawnpointIdFieldNumber = 1;
+      private string spawnpointId_ = "";
+      public string SpawnpointId {
+        get { return spawnpointId_; }
+        set {
+          spawnpointId_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+        }
+      }
+
+      /// <summary>Field number for the "EncounterId" field.</summary>
+      public const int EncounterIdFieldNumber = 2;
+      private ulong encounterId_;
+      public ulong EncounterId {
+        get { return encounterId_; }
+        set {
+          encounterId_ = value;
+        }
+      }
+
+      /// <summary>Field number for the "PokedexTypeId" field.</summary>
+      public const int PokedexTypeIdFieldNumber = 3;
+      private int pokedexTypeId_;
+      public int PokedexTypeId {
+        get { return pokedexTypeId_; }
+        set {
+          pokedexTypeId_ = value;
+        }
+      }
+
+      /// <summary>Field number for the "ExpirationTimeMs" field.</summary>
+      public const int ExpirationTimeMsFieldNumber = 4;
+      private long expirationTimeMs_;
+      public long ExpirationTimeMs {
+        get { return expirationTimeMs_; }
+        set {
+          expirationTimeMs_ = value;
+        }
+      }
+
+      /// <summary>Field number for the "Latitude" field.</summary>
+      public const int LatitudeFieldNumber = 5;
+      private double latitude_;
+      public double Latitude {
+        get { return latitude_; }
+        set {
+          latitude_ = value;
+        }
+      }
+
+      /// <summary>Field number for the "Longitude" field.</summary>
+      public const int LongitudeFieldNumber = 6;
+      private double longitude_;
+      public double Longitude {
+        get { return longitude_; }
+        set {
+          longitude_ = value;
+        }
+      }
+
+      public override bool Equals(object other) {
+        return Equals(other as MapPokemonProto);
+      }
+
+      public bool Equals(MapPokemonProto other) {
+        if (ReferenceEquals(other, null)) {
+          return false;
+        }
+        if (ReferenceEquals(other, this)) {
+          return true;
+        }
+        if (SpawnpointId != other.SpawnpointId) return false;
+        if (EncounterId != other.EncounterId) return false;
+        if (PokedexTypeId != other.PokedexTypeId) return false;
+        if (ExpirationTimeMs != other.ExpirationTimeMs) return false;
+        if (Latitude != other.Latitude) return false;
+        if (Longitude != other.Longitude) return false;
+        return true;
+      }
+
+      public override int GetHashCode() {
+        int hash = 1;
+        if (SpawnpointId.Length != 0) hash ^= SpawnpointId.GetHashCode();
+        if (EncounterId != 0UL) hash ^= EncounterId.GetHashCode();
+        if (PokedexTypeId != 0) hash ^= PokedexTypeId.GetHashCode();
+        if (ExpirationTimeMs != 0L) hash ^= ExpirationTimeMs.GetHashCode();
+        if (Latitude != 0D) hash ^= Latitude.GetHashCode();
+        if (Longitude != 0D) hash ^= Longitude.GetHashCode();
+        return hash;
+      }
+
+      public override string ToString() {
+        return pb::JsonFormatter.ToDiagnosticString(this);
+      }
+
+      public void WriteTo(pb::CodedOutputStream output) {
+        if (SpawnpointId.Length != 0) {
+          output.WriteRawTag(10);
+          output.WriteString(SpawnpointId);
+        }
+        if (EncounterId != 0UL) {
+          output.WriteRawTag(16);
+          output.WriteUInt64(EncounterId);
+        }
+        if (PokedexTypeId != 0) {
+          output.WriteRawTag(24);
+          output.WriteInt32(PokedexTypeId);
+        }
+        if (ExpirationTimeMs != 0L) {
+          output.WriteRawTag(32);
+          output.WriteInt64(ExpirationTimeMs);
+        }
+        if (Latitude != 0D) {
+          output.WriteRawTag(41);
+          output.WriteDouble(Latitude);
+        }
+        if (Longitude != 0D) {
+          output.WriteRawTag(49);
+          output.WriteDouble(Longitude);
         }
       }
 
       public int CalculateSize() {
         int size = 0;
-        if (Unknown71.Length != 0) {
-          size += 1 + pb::CodedOutputStream.ComputeBytesSize(Unknown71);
+        if (SpawnpointId.Length != 0) {
+          size += 1 + pb::CodedOutputStream.ComputeStringSize(SpawnpointId);
         }
-        if (Unknown72 != 0L) {
-          size += 1 + pb::CodedOutputStream.ComputeInt64Size(Unknown72);
+        if (EncounterId != 0UL) {
+          size += 1 + pb::CodedOutputStream.ComputeUInt64Size(EncounterId);
         }
-        if (Unknown73.Length != 0) {
-          size += 1 + pb::CodedOutputStream.ComputeBytesSize(Unknown73);
+        if (PokedexTypeId != 0) {
+          size += 1 + pb::CodedOutputStream.ComputeInt32Size(PokedexTypeId);
+        }
+        if (ExpirationTimeMs != 0L) {
+          size += 1 + pb::CodedOutputStream.ComputeInt64Size(ExpirationTimeMs);
+        }
+        if (Latitude != 0D) {
+          size += 1 + 8;
+        }
+        if (Longitude != 0D) {
+          size += 1 + 8;
         }
         return size;
       }
 
-      public void MergeFrom(Unknown7 other) {
+      public void MergeFrom(MapPokemonProto other) {
         if (other == null) {
           return;
         }
-        if (other.Unknown71.Length != 0) {
-          Unknown71 = other.Unknown71;
+        if (other.SpawnpointId.Length != 0) {
+          SpawnpointId = other.SpawnpointId;
         }
-        if (other.Unknown72 != 0L) {
-          Unknown72 = other.Unknown72;
+        if (other.EncounterId != 0UL) {
+          EncounterId = other.EncounterId;
         }
-        if (other.Unknown73.Length != 0) {
-          Unknown73 = other.Unknown73;
+        if (other.PokedexTypeId != 0) {
+          PokedexTypeId = other.PokedexTypeId;
+        }
+        if (other.ExpirationTimeMs != 0L) {
+          ExpirationTimeMs = other.ExpirationTimeMs;
+        }
+        if (other.Latitude != 0D) {
+          Latitude = other.Latitude;
+        }
+        if (other.Longitude != 0D) {
+          Longitude = other.Longitude;
         }
       }
 
@@ -1791,15 +4188,27 @@ public sealed partial class ResponseEnvelop : pb::IMessage<ResponseEnvelop> {
               input.SkipLastField();
               break;
             case 10: {
-              Unknown71 = input.ReadBytes();
+              SpawnpointId = input.ReadString();
               break;
             }
             case 16: {
-              Unknown72 = input.ReadInt64();
+              EncounterId = input.ReadUInt64();
               break;
             }
-            case 26: {
-              Unknown73 = input.ReadBytes();
+            case 24: {
+              PokedexTypeId = input.ReadInt32();
+              break;
+            }
+            case 32: {
+              ExpirationTimeMs = input.ReadInt64();
+              break;
+            }
+            case 41: {
+              Latitude = input.ReadDouble();
+              break;
+            }
+            case 49: {
+              Longitude = input.ReadDouble();
               break;
             }
           }
@@ -1809,31 +4218,1409 @@ public sealed partial class ResponseEnvelop : pb::IMessage<ResponseEnvelop> {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-    public sealed partial class Payload : pb::IMessage<Payload> {
-      private static readonly pb::MessageParser<Payload> _parser = new pb::MessageParser<Payload>(() => new Payload());
-      public static pb::MessageParser<Payload> Parser { get { return _parser; } }
+    public sealed partial class PokemonFortProto : pb::IMessage<PokemonFortProto> {
+      private static readonly pb::MessageParser<PokemonFortProto> _parser = new pb::MessageParser<PokemonFortProto>(() => new PokemonFortProto());
+      public static pb::MessageParser<PokemonFortProto> Parser { get { return _parser; } }
 
       public static pbr::MessageDescriptor Descriptor {
-        get { return global::ResponseEnvelop.Descriptor.NestedTypes[2]; }
+        get { return global::ResponseEnvelop.Descriptor.NestedTypes[5]; }
       }
 
       pbr::MessageDescriptor pb::IMessage.Descriptor {
         get { return Descriptor; }
       }
 
-      public Payload() {
+      public PokemonFortProto() {
         OnConstruction();
       }
 
       partial void OnConstruction();
 
-      public Payload(Payload other) : this() {
+      public PokemonFortProto(PokemonFortProto other) : this() {
+        fortId_ = other.fortId_;
+        lastModifiedMs_ = other.lastModifiedMs_;
+        latitude_ = other.latitude_;
+        longitude_ = other.longitude_;
+        team_ = other.team_;
+        guardPokemonId_ = other.guardPokemonId_;
+        guardPokemonLevel_ = other.guardPokemonLevel_;
+        enabled_ = other.enabled_;
+        fortType_ = other.fortType_;
+        gymPoints_ = other.gymPoints_;
+        isInBattle_ = other.isInBattle_;
+        ActivePokemon = other.activePokemon_ != null ? other.ActivePokemon.Clone() : null;
+        cooldownCompleteMs_ = other.cooldownCompleteMs_;
+        sponsor_ = other.sponsor_;
+        renderingType_ = other.renderingType_;
+      }
+
+      public PokemonFortProto Clone() {
+        return new PokemonFortProto(this);
+      }
+
+      /// <summary>Field number for the "FortId" field.</summary>
+      public const int FortIdFieldNumber = 1;
+      private string fortId_ = "";
+      public string FortId {
+        get { return fortId_; }
+        set {
+          fortId_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+        }
+      }
+
+      /// <summary>Field number for the "LastModifiedMs" field.</summary>
+      public const int LastModifiedMsFieldNumber = 2;
+      private long lastModifiedMs_;
+      public long LastModifiedMs {
+        get { return lastModifiedMs_; }
+        set {
+          lastModifiedMs_ = value;
+        }
+      }
+
+      /// <summary>Field number for the "Latitude" field.</summary>
+      public const int LatitudeFieldNumber = 3;
+      private double latitude_;
+      public double Latitude {
+        get { return latitude_; }
+        set {
+          latitude_ = value;
+        }
+      }
+
+      /// <summary>Field number for the "Longitude" field.</summary>
+      public const int LongitudeFieldNumber = 4;
+      private double longitude_;
+      public double Longitude {
+        get { return longitude_; }
+        set {
+          longitude_ = value;
+        }
+      }
+
+      /// <summary>Field number for the "Team" field.</summary>
+      public const int TeamFieldNumber = 5;
+      private int team_;
+      public int Team {
+        get { return team_; }
+        set {
+          team_ = value;
+        }
+      }
+
+      /// <summary>Field number for the "GuardPokemonId" field.</summary>
+      public const int GuardPokemonIdFieldNumber = 6;
+      private int guardPokemonId_;
+      public int GuardPokemonId {
+        get { return guardPokemonId_; }
+        set {
+          guardPokemonId_ = value;
+        }
+      }
+
+      /// <summary>Field number for the "GuardPokemonLevel" field.</summary>
+      public const int GuardPokemonLevelFieldNumber = 7;
+      private int guardPokemonLevel_;
+      public int GuardPokemonLevel {
+        get { return guardPokemonLevel_; }
+        set {
+          guardPokemonLevel_ = value;
+        }
+      }
+
+      /// <summary>Field number for the "Enabled" field.</summary>
+      public const int EnabledFieldNumber = 8;
+      private bool enabled_;
+      public bool Enabled {
+        get { return enabled_; }
+        set {
+          enabled_ = value;
+        }
+      }
+
+      /// <summary>Field number for the "FortType" field.</summary>
+      public const int FortTypeFieldNumber = 9;
+      private int fortType_;
+      /// <summary>
+      ///  ENUM.Holoholo.Rpc.FortType FortType = 9;
+      /// </summary>
+      public int FortType {
+        get { return fortType_; }
+        set {
+          fortType_ = value;
+        }
+      }
+
+      /// <summary>Field number for the "GymPoints" field.</summary>
+      public const int GymPointsFieldNumber = 10;
+      private long gymPoints_;
+      public long GymPoints {
+        get { return gymPoints_; }
+        set {
+          gymPoints_ = value;
+        }
+      }
+
+      /// <summary>Field number for the "IsInBattle" field.</summary>
+      public const int IsInBattleFieldNumber = 11;
+      private bool isInBattle_;
+      public bool IsInBattle {
+        get { return isInBattle_; }
+        set {
+          isInBattle_ = value;
+        }
+      }
+
+      /// <summary>Field number for the "ActivePokemon" field.</summary>
+      public const int ActivePokemonFieldNumber = 13;
+      private global::ResponseEnvelop.Types.MapPokemonProto activePokemon_;
+      /// <summary>
+      /// unknown ActiveFortModifier = 12;
+      /// </summary>
+      public global::ResponseEnvelop.Types.MapPokemonProto ActivePokemon {
+        get { return activePokemon_; }
+        set {
+          activePokemon_ = value;
+        }
+      }
+
+      /// <summary>Field number for the "CooldownCompleteMs" field.</summary>
+      public const int CooldownCompleteMsFieldNumber = 14;
+      private long cooldownCompleteMs_;
+      public long CooldownCompleteMs {
+        get { return cooldownCompleteMs_; }
+        set {
+          cooldownCompleteMs_ = value;
+        }
+      }
+
+      /// <summary>Field number for the "Sponsor" field.</summary>
+      public const int SponsorFieldNumber = 15;
+      private int sponsor_;
+      /// <summary>
+      ///  ENUM.Holoholo.Rpc.Sponsor.Types.FortSponsor.Sponsor Sponsor = 15;
+      /// </summary>
+      public int Sponsor {
+        get { return sponsor_; }
+        set {
+          sponsor_ = value;
+        }
+      }
+
+      /// <summary>Field number for the "RenderingType" field.</summary>
+      public const int RenderingTypeFieldNumber = 16;
+      private int renderingType_;
+      /// <summary>
+      ///  ENUM.Holoholo.Rpc.RenderingType.Types.FortRenderingType.RenderingType RenderingType = 16;
+      /// </summary>
+      public int RenderingType {
+        get { return renderingType_; }
+        set {
+          renderingType_ = value;
+        }
+      }
+
+      public override bool Equals(object other) {
+        return Equals(other as PokemonFortProto);
+      }
+
+      public bool Equals(PokemonFortProto other) {
+        if (ReferenceEquals(other, null)) {
+          return false;
+        }
+        if (ReferenceEquals(other, this)) {
+          return true;
+        }
+        if (FortId != other.FortId) return false;
+        if (LastModifiedMs != other.LastModifiedMs) return false;
+        if (Latitude != other.Latitude) return false;
+        if (Longitude != other.Longitude) return false;
+        if (Team != other.Team) return false;
+        if (GuardPokemonId != other.GuardPokemonId) return false;
+        if (GuardPokemonLevel != other.GuardPokemonLevel) return false;
+        if (Enabled != other.Enabled) return false;
+        if (FortType != other.FortType) return false;
+        if (GymPoints != other.GymPoints) return false;
+        if (IsInBattle != other.IsInBattle) return false;
+        if (!object.Equals(ActivePokemon, other.ActivePokemon)) return false;
+        if (CooldownCompleteMs != other.CooldownCompleteMs) return false;
+        if (Sponsor != other.Sponsor) return false;
+        if (RenderingType != other.RenderingType) return false;
+        return true;
+      }
+
+      public override int GetHashCode() {
+        int hash = 1;
+        if (FortId.Length != 0) hash ^= FortId.GetHashCode();
+        if (LastModifiedMs != 0L) hash ^= LastModifiedMs.GetHashCode();
+        if (Latitude != 0D) hash ^= Latitude.GetHashCode();
+        if (Longitude != 0D) hash ^= Longitude.GetHashCode();
+        if (Team != 0) hash ^= Team.GetHashCode();
+        if (GuardPokemonId != 0) hash ^= GuardPokemonId.GetHashCode();
+        if (GuardPokemonLevel != 0) hash ^= GuardPokemonLevel.GetHashCode();
+        if (Enabled != false) hash ^= Enabled.GetHashCode();
+        if (FortType != 0) hash ^= FortType.GetHashCode();
+        if (GymPoints != 0L) hash ^= GymPoints.GetHashCode();
+        if (IsInBattle != false) hash ^= IsInBattle.GetHashCode();
+        if (activePokemon_ != null) hash ^= ActivePokemon.GetHashCode();
+        if (CooldownCompleteMs != 0L) hash ^= CooldownCompleteMs.GetHashCode();
+        if (Sponsor != 0) hash ^= Sponsor.GetHashCode();
+        if (RenderingType != 0) hash ^= RenderingType.GetHashCode();
+        return hash;
+      }
+
+      public override string ToString() {
+        return pb::JsonFormatter.ToDiagnosticString(this);
+      }
+
+      public void WriteTo(pb::CodedOutputStream output) {
+        if (FortId.Length != 0) {
+          output.WriteRawTag(10);
+          output.WriteString(FortId);
+        }
+        if (LastModifiedMs != 0L) {
+          output.WriteRawTag(16);
+          output.WriteInt64(LastModifiedMs);
+        }
+        if (Latitude != 0D) {
+          output.WriteRawTag(25);
+          output.WriteDouble(Latitude);
+        }
+        if (Longitude != 0D) {
+          output.WriteRawTag(33);
+          output.WriteDouble(Longitude);
+        }
+        if (Team != 0) {
+          output.WriteRawTag(40);
+          output.WriteInt32(Team);
+        }
+        if (GuardPokemonId != 0) {
+          output.WriteRawTag(48);
+          output.WriteInt32(GuardPokemonId);
+        }
+        if (GuardPokemonLevel != 0) {
+          output.WriteRawTag(56);
+          output.WriteInt32(GuardPokemonLevel);
+        }
+        if (Enabled != false) {
+          output.WriteRawTag(64);
+          output.WriteBool(Enabled);
+        }
+        if (FortType != 0) {
+          output.WriteRawTag(72);
+          output.WriteInt32(FortType);
+        }
+        if (GymPoints != 0L) {
+          output.WriteRawTag(80);
+          output.WriteInt64(GymPoints);
+        }
+        if (IsInBattle != false) {
+          output.WriteRawTag(88);
+          output.WriteBool(IsInBattle);
+        }
+        if (activePokemon_ != null) {
+          output.WriteRawTag(106);
+          output.WriteMessage(ActivePokemon);
+        }
+        if (CooldownCompleteMs != 0L) {
+          output.WriteRawTag(112);
+          output.WriteInt64(CooldownCompleteMs);
+        }
+        if (Sponsor != 0) {
+          output.WriteRawTag(120);
+          output.WriteInt32(Sponsor);
+        }
+        if (RenderingType != 0) {
+          output.WriteRawTag(128, 1);
+          output.WriteInt32(RenderingType);
+        }
+      }
+
+      public int CalculateSize() {
+        int size = 0;
+        if (FortId.Length != 0) {
+          size += 1 + pb::CodedOutputStream.ComputeStringSize(FortId);
+        }
+        if (LastModifiedMs != 0L) {
+          size += 1 + pb::CodedOutputStream.ComputeInt64Size(LastModifiedMs);
+        }
+        if (Latitude != 0D) {
+          size += 1 + 8;
+        }
+        if (Longitude != 0D) {
+          size += 1 + 8;
+        }
+        if (Team != 0) {
+          size += 1 + pb::CodedOutputStream.ComputeInt32Size(Team);
+        }
+        if (GuardPokemonId != 0) {
+          size += 1 + pb::CodedOutputStream.ComputeInt32Size(GuardPokemonId);
+        }
+        if (GuardPokemonLevel != 0) {
+          size += 1 + pb::CodedOutputStream.ComputeInt32Size(GuardPokemonLevel);
+        }
+        if (Enabled != false) {
+          size += 1 + 1;
+        }
+        if (FortType != 0) {
+          size += 1 + pb::CodedOutputStream.ComputeInt32Size(FortType);
+        }
+        if (GymPoints != 0L) {
+          size += 1 + pb::CodedOutputStream.ComputeInt64Size(GymPoints);
+        }
+        if (IsInBattle != false) {
+          size += 1 + 1;
+        }
+        if (activePokemon_ != null) {
+          size += 1 + pb::CodedOutputStream.ComputeMessageSize(ActivePokemon);
+        }
+        if (CooldownCompleteMs != 0L) {
+          size += 1 + pb::CodedOutputStream.ComputeInt64Size(CooldownCompleteMs);
+        }
+        if (Sponsor != 0) {
+          size += 1 + pb::CodedOutputStream.ComputeInt32Size(Sponsor);
+        }
+        if (RenderingType != 0) {
+          size += 2 + pb::CodedOutputStream.ComputeInt32Size(RenderingType);
+        }
+        return size;
+      }
+
+      public void MergeFrom(PokemonFortProto other) {
+        if (other == null) {
+          return;
+        }
+        if (other.FortId.Length != 0) {
+          FortId = other.FortId;
+        }
+        if (other.LastModifiedMs != 0L) {
+          LastModifiedMs = other.LastModifiedMs;
+        }
+        if (other.Latitude != 0D) {
+          Latitude = other.Latitude;
+        }
+        if (other.Longitude != 0D) {
+          Longitude = other.Longitude;
+        }
+        if (other.Team != 0) {
+          Team = other.Team;
+        }
+        if (other.GuardPokemonId != 0) {
+          GuardPokemonId = other.GuardPokemonId;
+        }
+        if (other.GuardPokemonLevel != 0) {
+          GuardPokemonLevel = other.GuardPokemonLevel;
+        }
+        if (other.Enabled != false) {
+          Enabled = other.Enabled;
+        }
+        if (other.FortType != 0) {
+          FortType = other.FortType;
+        }
+        if (other.GymPoints != 0L) {
+          GymPoints = other.GymPoints;
+        }
+        if (other.IsInBattle != false) {
+          IsInBattle = other.IsInBattle;
+        }
+        if (other.activePokemon_ != null) {
+          if (activePokemon_ == null) {
+            activePokemon_ = new global::ResponseEnvelop.Types.MapPokemonProto();
+          }
+          ActivePokemon.MergeFrom(other.ActivePokemon);
+        }
+        if (other.CooldownCompleteMs != 0L) {
+          CooldownCompleteMs = other.CooldownCompleteMs;
+        }
+        if (other.Sponsor != 0) {
+          Sponsor = other.Sponsor;
+        }
+        if (other.RenderingType != 0) {
+          RenderingType = other.RenderingType;
+        }
+      }
+
+      public void MergeFrom(pb::CodedInputStream input) {
+        uint tag;
+        while ((tag = input.ReadTag()) != 0) {
+          switch(tag) {
+            default:
+              input.SkipLastField();
+              break;
+            case 10: {
+              FortId = input.ReadString();
+              break;
+            }
+            case 16: {
+              LastModifiedMs = input.ReadInt64();
+              break;
+            }
+            case 25: {
+              Latitude = input.ReadDouble();
+              break;
+            }
+            case 33: {
+              Longitude = input.ReadDouble();
+              break;
+            }
+            case 40: {
+              Team = input.ReadInt32();
+              break;
+            }
+            case 48: {
+              GuardPokemonId = input.ReadInt32();
+              break;
+            }
+            case 56: {
+              GuardPokemonLevel = input.ReadInt32();
+              break;
+            }
+            case 64: {
+              Enabled = input.ReadBool();
+              break;
+            }
+            case 72: {
+              FortType = input.ReadInt32();
+              break;
+            }
+            case 80: {
+              GymPoints = input.ReadInt64();
+              break;
+            }
+            case 88: {
+              IsInBattle = input.ReadBool();
+              break;
+            }
+            case 106: {
+              if (activePokemon_ == null) {
+                activePokemon_ = new global::ResponseEnvelop.Types.MapPokemonProto();
+              }
+              input.ReadMessage(activePokemon_);
+              break;
+            }
+            case 112: {
+              CooldownCompleteMs = input.ReadInt64();
+              break;
+            }
+            case 120: {
+              Sponsor = input.ReadInt32();
+              break;
+            }
+            case 128: {
+              RenderingType = input.ReadInt32();
+              break;
+            }
+          }
+        }
+      }
+
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+    public sealed partial class PokemonSummaryFortProto : pb::IMessage<PokemonSummaryFortProto> {
+      private static readonly pb::MessageParser<PokemonSummaryFortProto> _parser = new pb::MessageParser<PokemonSummaryFortProto>(() => new PokemonSummaryFortProto());
+      public static pb::MessageParser<PokemonSummaryFortProto> Parser { get { return _parser; } }
+
+      public static pbr::MessageDescriptor Descriptor {
+        get { return global::ResponseEnvelop.Descriptor.NestedTypes[6]; }
+      }
+
+      pbr::MessageDescriptor pb::IMessage.Descriptor {
+        get { return Descriptor; }
+      }
+
+      public PokemonSummaryFortProto() {
+        OnConstruction();
+      }
+
+      partial void OnConstruction();
+
+      public PokemonSummaryFortProto(PokemonSummaryFortProto other) : this() {
+        fortSummaryId_ = other.fortSummaryId_;
+        lastModifiedMs_ = other.lastModifiedMs_;
+        latitude_ = other.latitude_;
+        longitude_ = other.longitude_;
+      }
+
+      public PokemonSummaryFortProto Clone() {
+        return new PokemonSummaryFortProto(this);
+      }
+
+      /// <summary>Field number for the "FortSummaryId" field.</summary>
+      public const int FortSummaryIdFieldNumber = 1;
+      private string fortSummaryId_ = "";
+      public string FortSummaryId {
+        get { return fortSummaryId_; }
+        set {
+          fortSummaryId_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+        }
+      }
+
+      /// <summary>Field number for the "LastModifiedMs" field.</summary>
+      public const int LastModifiedMsFieldNumber = 2;
+      private long lastModifiedMs_;
+      public long LastModifiedMs {
+        get { return lastModifiedMs_; }
+        set {
+          lastModifiedMs_ = value;
+        }
+      }
+
+      /// <summary>Field number for the "Latitude" field.</summary>
+      public const int LatitudeFieldNumber = 3;
+      private double latitude_;
+      public double Latitude {
+        get { return latitude_; }
+        set {
+          latitude_ = value;
+        }
+      }
+
+      /// <summary>Field number for the "Longitude" field.</summary>
+      public const int LongitudeFieldNumber = 4;
+      private double longitude_;
+      public double Longitude {
+        get { return longitude_; }
+        set {
+          longitude_ = value;
+        }
+      }
+
+      public override bool Equals(object other) {
+        return Equals(other as PokemonSummaryFortProto);
+      }
+
+      public bool Equals(PokemonSummaryFortProto other) {
+        if (ReferenceEquals(other, null)) {
+          return false;
+        }
+        if (ReferenceEquals(other, this)) {
+          return true;
+        }
+        if (FortSummaryId != other.FortSummaryId) return false;
+        if (LastModifiedMs != other.LastModifiedMs) return false;
+        if (Latitude != other.Latitude) return false;
+        if (Longitude != other.Longitude) return false;
+        return true;
+      }
+
+      public override int GetHashCode() {
+        int hash = 1;
+        if (FortSummaryId.Length != 0) hash ^= FortSummaryId.GetHashCode();
+        if (LastModifiedMs != 0L) hash ^= LastModifiedMs.GetHashCode();
+        if (Latitude != 0D) hash ^= Latitude.GetHashCode();
+        if (Longitude != 0D) hash ^= Longitude.GetHashCode();
+        return hash;
+      }
+
+      public override string ToString() {
+        return pb::JsonFormatter.ToDiagnosticString(this);
+      }
+
+      public void WriteTo(pb::CodedOutputStream output) {
+        if (FortSummaryId.Length != 0) {
+          output.WriteRawTag(10);
+          output.WriteString(FortSummaryId);
+        }
+        if (LastModifiedMs != 0L) {
+          output.WriteRawTag(16);
+          output.WriteInt64(LastModifiedMs);
+        }
+        if (Latitude != 0D) {
+          output.WriteRawTag(25);
+          output.WriteDouble(Latitude);
+        }
+        if (Longitude != 0D) {
+          output.WriteRawTag(33);
+          output.WriteDouble(Longitude);
+        }
+      }
+
+      public int CalculateSize() {
+        int size = 0;
+        if (FortSummaryId.Length != 0) {
+          size += 1 + pb::CodedOutputStream.ComputeStringSize(FortSummaryId);
+        }
+        if (LastModifiedMs != 0L) {
+          size += 1 + pb::CodedOutputStream.ComputeInt64Size(LastModifiedMs);
+        }
+        if (Latitude != 0D) {
+          size += 1 + 8;
+        }
+        if (Longitude != 0D) {
+          size += 1 + 8;
+        }
+        return size;
+      }
+
+      public void MergeFrom(PokemonSummaryFortProto other) {
+        if (other == null) {
+          return;
+        }
+        if (other.FortSummaryId.Length != 0) {
+          FortSummaryId = other.FortSummaryId;
+        }
+        if (other.LastModifiedMs != 0L) {
+          LastModifiedMs = other.LastModifiedMs;
+        }
+        if (other.Latitude != 0D) {
+          Latitude = other.Latitude;
+        }
+        if (other.Longitude != 0D) {
+          Longitude = other.Longitude;
+        }
+      }
+
+      public void MergeFrom(pb::CodedInputStream input) {
+        uint tag;
+        while ((tag = input.ReadTag()) != 0) {
+          switch(tag) {
+            default:
+              input.SkipLastField();
+              break;
+            case 10: {
+              FortSummaryId = input.ReadString();
+              break;
+            }
+            case 16: {
+              LastModifiedMs = input.ReadInt64();
+              break;
+            }
+            case 25: {
+              Latitude = input.ReadDouble();
+              break;
+            }
+            case 33: {
+              Longitude = input.ReadDouble();
+              break;
+            }
+          }
+        }
+      }
+
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+    public sealed partial class ClientSpawnPointProto : pb::IMessage<ClientSpawnPointProto> {
+      private static readonly pb::MessageParser<ClientSpawnPointProto> _parser = new pb::MessageParser<ClientSpawnPointProto>(() => new ClientSpawnPointProto());
+      public static pb::MessageParser<ClientSpawnPointProto> Parser { get { return _parser; } }
+
+      public static pbr::MessageDescriptor Descriptor {
+        get { return global::ResponseEnvelop.Descriptor.NestedTypes[7]; }
+      }
+
+      pbr::MessageDescriptor pb::IMessage.Descriptor {
+        get { return Descriptor; }
+      }
+
+      public ClientSpawnPointProto() {
+        OnConstruction();
+      }
+
+      partial void OnConstruction();
+
+      public ClientSpawnPointProto(ClientSpawnPointProto other) : this() {
+        latitude_ = other.latitude_;
+        longitude_ = other.longitude_;
+      }
+
+      public ClientSpawnPointProto Clone() {
+        return new ClientSpawnPointProto(this);
+      }
+
+      /// <summary>Field number for the "Latitude" field.</summary>
+      public const int LatitudeFieldNumber = 2;
+      private double latitude_;
+      public double Latitude {
+        get { return latitude_; }
+        set {
+          latitude_ = value;
+        }
+      }
+
+      /// <summary>Field number for the "Longitude" field.</summary>
+      public const int LongitudeFieldNumber = 3;
+      private double longitude_;
+      public double Longitude {
+        get { return longitude_; }
+        set {
+          longitude_ = value;
+        }
+      }
+
+      public override bool Equals(object other) {
+        return Equals(other as ClientSpawnPointProto);
+      }
+
+      public bool Equals(ClientSpawnPointProto other) {
+        if (ReferenceEquals(other, null)) {
+          return false;
+        }
+        if (ReferenceEquals(other, this)) {
+          return true;
+        }
+        if (Latitude != other.Latitude) return false;
+        if (Longitude != other.Longitude) return false;
+        return true;
+      }
+
+      public override int GetHashCode() {
+        int hash = 1;
+        if (Latitude != 0D) hash ^= Latitude.GetHashCode();
+        if (Longitude != 0D) hash ^= Longitude.GetHashCode();
+        return hash;
+      }
+
+      public override string ToString() {
+        return pb::JsonFormatter.ToDiagnosticString(this);
+      }
+
+      public void WriteTo(pb::CodedOutputStream output) {
+        if (Latitude != 0D) {
+          output.WriteRawTag(17);
+          output.WriteDouble(Latitude);
+        }
+        if (Longitude != 0D) {
+          output.WriteRawTag(25);
+          output.WriteDouble(Longitude);
+        }
+      }
+
+      public int CalculateSize() {
+        int size = 0;
+        if (Latitude != 0D) {
+          size += 1 + 8;
+        }
+        if (Longitude != 0D) {
+          size += 1 + 8;
+        }
+        return size;
+      }
+
+      public void MergeFrom(ClientSpawnPointProto other) {
+        if (other == null) {
+          return;
+        }
+        if (other.Latitude != 0D) {
+          Latitude = other.Latitude;
+        }
+        if (other.Longitude != 0D) {
+          Longitude = other.Longitude;
+        }
+      }
+
+      public void MergeFrom(pb::CodedInputStream input) {
+        uint tag;
+        while ((tag = input.ReadTag()) != 0) {
+          switch(tag) {
+            default:
+              input.SkipLastField();
+              break;
+            case 17: {
+              Latitude = input.ReadDouble();
+              break;
+            }
+            case 25: {
+              Longitude = input.ReadDouble();
+              break;
+            }
+          }
+        }
+      }
+
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+    public sealed partial class WildPokemonProto : pb::IMessage<WildPokemonProto> {
+      private static readonly pb::MessageParser<WildPokemonProto> _parser = new pb::MessageParser<WildPokemonProto>(() => new WildPokemonProto());
+      public static pb::MessageParser<WildPokemonProto> Parser { get { return _parser; } }
+
+      public static pbr::MessageDescriptor Descriptor {
+        get { return global::ResponseEnvelop.Descriptor.NestedTypes[8]; }
+      }
+
+      pbr::MessageDescriptor pb::IMessage.Descriptor {
+        get { return Descriptor; }
+      }
+
+      public WildPokemonProto() {
+        OnConstruction();
+      }
+
+      partial void OnConstruction();
+
+      public WildPokemonProto(WildPokemonProto other) : this() {
+        encounterId_ = other.encounterId_;
+        lastModifiedMs_ = other.lastModifiedMs_;
+        latitude_ = other.latitude_;
+        longitude_ = other.longitude_;
+        spawnPointId_ = other.spawnPointId_;
+        Pokemon = other.pokemon_ != null ? other.Pokemon.Clone() : null;
+        timeTillHiddenMs_ = other.timeTillHiddenMs_;
+      }
+
+      public WildPokemonProto Clone() {
+        return new WildPokemonProto(this);
+      }
+
+      /// <summary>Field number for the "EncounterId" field.</summary>
+      public const int EncounterIdFieldNumber = 1;
+      private ulong encounterId_;
+      public ulong EncounterId {
+        get { return encounterId_; }
+        set {
+          encounterId_ = value;
+        }
+      }
+
+      /// <summary>Field number for the "LastModifiedMs" field.</summary>
+      public const int LastModifiedMsFieldNumber = 2;
+      private long lastModifiedMs_;
+      public long LastModifiedMs {
+        get { return lastModifiedMs_; }
+        set {
+          lastModifiedMs_ = value;
+        }
+      }
+
+      /// <summary>Field number for the "Latitude" field.</summary>
+      public const int LatitudeFieldNumber = 3;
+      private double latitude_;
+      public double Latitude {
+        get { return latitude_; }
+        set {
+          latitude_ = value;
+        }
+      }
+
+      /// <summary>Field number for the "Longitude" field.</summary>
+      public const int LongitudeFieldNumber = 4;
+      private double longitude_;
+      public double Longitude {
+        get { return longitude_; }
+        set {
+          longitude_ = value;
+        }
+      }
+
+      /// <summary>Field number for the "SpawnPointId" field.</summary>
+      public const int SpawnPointIdFieldNumber = 5;
+      private string spawnPointId_ = "";
+      public string SpawnPointId {
+        get { return spawnPointId_; }
+        set {
+          spawnPointId_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+        }
+      }
+
+      /// <summary>Field number for the "pokemon" field.</summary>
+      public const int PokemonFieldNumber = 7;
+      private global::ResponseEnvelop.Types.WildPokemonProto.Types.Pokemon pokemon_;
+      public global::ResponseEnvelop.Types.WildPokemonProto.Types.Pokemon Pokemon {
+        get { return pokemon_; }
+        set {
+          pokemon_ = value;
+        }
+      }
+
+      /// <summary>Field number for the "TimeTillHiddenMs" field.</summary>
+      public const int TimeTillHiddenMsFieldNumber = 11;
+      private int timeTillHiddenMs_;
+      public int TimeTillHiddenMs {
+        get { return timeTillHiddenMs_; }
+        set {
+          timeTillHiddenMs_ = value;
+        }
+      }
+
+      public override bool Equals(object other) {
+        return Equals(other as WildPokemonProto);
+      }
+
+      public bool Equals(WildPokemonProto other) {
+        if (ReferenceEquals(other, null)) {
+          return false;
+        }
+        if (ReferenceEquals(other, this)) {
+          return true;
+        }
+        if (EncounterId != other.EncounterId) return false;
+        if (LastModifiedMs != other.LastModifiedMs) return false;
+        if (Latitude != other.Latitude) return false;
+        if (Longitude != other.Longitude) return false;
+        if (SpawnPointId != other.SpawnPointId) return false;
+        if (!object.Equals(Pokemon, other.Pokemon)) return false;
+        if (TimeTillHiddenMs != other.TimeTillHiddenMs) return false;
+        return true;
+      }
+
+      public override int GetHashCode() {
+        int hash = 1;
+        if (EncounterId != 0UL) hash ^= EncounterId.GetHashCode();
+        if (LastModifiedMs != 0L) hash ^= LastModifiedMs.GetHashCode();
+        if (Latitude != 0D) hash ^= Latitude.GetHashCode();
+        if (Longitude != 0D) hash ^= Longitude.GetHashCode();
+        if (SpawnPointId.Length != 0) hash ^= SpawnPointId.GetHashCode();
+        if (pokemon_ != null) hash ^= Pokemon.GetHashCode();
+        if (TimeTillHiddenMs != 0) hash ^= TimeTillHiddenMs.GetHashCode();
+        return hash;
+      }
+
+      public override string ToString() {
+        return pb::JsonFormatter.ToDiagnosticString(this);
+      }
+
+      public void WriteTo(pb::CodedOutputStream output) {
+        if (EncounterId != 0UL) {
+          output.WriteRawTag(8);
+          output.WriteUInt64(EncounterId);
+        }
+        if (LastModifiedMs != 0L) {
+          output.WriteRawTag(16);
+          output.WriteInt64(LastModifiedMs);
+        }
+        if (Latitude != 0D) {
+          output.WriteRawTag(25);
+          output.WriteDouble(Latitude);
+        }
+        if (Longitude != 0D) {
+          output.WriteRawTag(33);
+          output.WriteDouble(Longitude);
+        }
+        if (SpawnPointId.Length != 0) {
+          output.WriteRawTag(42);
+          output.WriteString(SpawnPointId);
+        }
+        if (pokemon_ != null) {
+          output.WriteRawTag(58);
+          output.WriteMessage(Pokemon);
+        }
+        if (TimeTillHiddenMs != 0) {
+          output.WriteRawTag(88);
+          output.WriteInt32(TimeTillHiddenMs);
+        }
+      }
+
+      public int CalculateSize() {
+        int size = 0;
+        if (EncounterId != 0UL) {
+          size += 1 + pb::CodedOutputStream.ComputeUInt64Size(EncounterId);
+        }
+        if (LastModifiedMs != 0L) {
+          size += 1 + pb::CodedOutputStream.ComputeInt64Size(LastModifiedMs);
+        }
+        if (Latitude != 0D) {
+          size += 1 + 8;
+        }
+        if (Longitude != 0D) {
+          size += 1 + 8;
+        }
+        if (SpawnPointId.Length != 0) {
+          size += 1 + pb::CodedOutputStream.ComputeStringSize(SpawnPointId);
+        }
+        if (pokemon_ != null) {
+          size += 1 + pb::CodedOutputStream.ComputeMessageSize(Pokemon);
+        }
+        if (TimeTillHiddenMs != 0) {
+          size += 1 + pb::CodedOutputStream.ComputeInt32Size(TimeTillHiddenMs);
+        }
+        return size;
+      }
+
+      public void MergeFrom(WildPokemonProto other) {
+        if (other == null) {
+          return;
+        }
+        if (other.EncounterId != 0UL) {
+          EncounterId = other.EncounterId;
+        }
+        if (other.LastModifiedMs != 0L) {
+          LastModifiedMs = other.LastModifiedMs;
+        }
+        if (other.Latitude != 0D) {
+          Latitude = other.Latitude;
+        }
+        if (other.Longitude != 0D) {
+          Longitude = other.Longitude;
+        }
+        if (other.SpawnPointId.Length != 0) {
+          SpawnPointId = other.SpawnPointId;
+        }
+        if (other.pokemon_ != null) {
+          if (pokemon_ == null) {
+            pokemon_ = new global::ResponseEnvelop.Types.WildPokemonProto.Types.Pokemon();
+          }
+          Pokemon.MergeFrom(other.Pokemon);
+        }
+        if (other.TimeTillHiddenMs != 0) {
+          TimeTillHiddenMs = other.TimeTillHiddenMs;
+        }
+      }
+
+      public void MergeFrom(pb::CodedInputStream input) {
+        uint tag;
+        while ((tag = input.ReadTag()) != 0) {
+          switch(tag) {
+            default:
+              input.SkipLastField();
+              break;
+            case 8: {
+              EncounterId = input.ReadUInt64();
+              break;
+            }
+            case 16: {
+              LastModifiedMs = input.ReadInt64();
+              break;
+            }
+            case 25: {
+              Latitude = input.ReadDouble();
+              break;
+            }
+            case 33: {
+              Longitude = input.ReadDouble();
+              break;
+            }
+            case 42: {
+              SpawnPointId = input.ReadString();
+              break;
+            }
+            case 58: {
+              if (pokemon_ == null) {
+                pokemon_ = new global::ResponseEnvelop.Types.WildPokemonProto.Types.Pokemon();
+              }
+              input.ReadMessage(pokemon_);
+              break;
+            }
+            case 88: {
+              TimeTillHiddenMs = input.ReadInt32();
+              break;
+            }
+          }
+        }
+      }
+
+      #region Nested types
+      /// <summary>Container for nested types declared in the WildPokemonProto message type.</summary>
+      [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+      public static partial class Types {
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        public sealed partial class Pokemon : pb::IMessage<Pokemon> {
+          private static readonly pb::MessageParser<Pokemon> _parser = new pb::MessageParser<Pokemon>(() => new Pokemon());
+          public static pb::MessageParser<Pokemon> Parser { get { return _parser; } }
+
+          public static pbr::MessageDescriptor Descriptor {
+            get { return global::ResponseEnvelop.Types.WildPokemonProto.Descriptor.NestedTypes[0]; }
+          }
+
+          pbr::MessageDescriptor pb::IMessage.Descriptor {
+            get { return Descriptor; }
+          }
+
+          public Pokemon() {
+            OnConstruction();
+          }
+
+          partial void OnConstruction();
+
+          public Pokemon(Pokemon other) : this() {
+            id_ = other.id_;
+            pokemonId_ = other.pokemonId_;
+          }
+
+          public Pokemon Clone() {
+            return new Pokemon(this);
+          }
+
+          /// <summary>Field number for the "Id" field.</summary>
+          public const int IdFieldNumber = 1;
+          private ulong id_;
+          public ulong Id {
+            get { return id_; }
+            set {
+              id_ = value;
+            }
+          }
+
+          /// <summary>Field number for the "PokemonId" field.</summary>
+          public const int PokemonIdFieldNumber = 2;
+          private int pokemonId_;
+          public int PokemonId {
+            get { return pokemonId_; }
+            set {
+              pokemonId_ = value;
+            }
+          }
+
+          public override bool Equals(object other) {
+            return Equals(other as Pokemon);
+          }
+
+          public bool Equals(Pokemon other) {
+            if (ReferenceEquals(other, null)) {
+              return false;
+            }
+            if (ReferenceEquals(other, this)) {
+              return true;
+            }
+            if (Id != other.Id) return false;
+            if (PokemonId != other.PokemonId) return false;
+            return true;
+          }
+
+          public override int GetHashCode() {
+            int hash = 1;
+            if (Id != 0UL) hash ^= Id.GetHashCode();
+            if (PokemonId != 0) hash ^= PokemonId.GetHashCode();
+            return hash;
+          }
+
+          public override string ToString() {
+            return pb::JsonFormatter.ToDiagnosticString(this);
+          }
+
+          public void WriteTo(pb::CodedOutputStream output) {
+            if (Id != 0UL) {
+              output.WriteRawTag(8);
+              output.WriteUInt64(Id);
+            }
+            if (PokemonId != 0) {
+              output.WriteRawTag(16);
+              output.WriteInt32(PokemonId);
+            }
+          }
+
+          public int CalculateSize() {
+            int size = 0;
+            if (Id != 0UL) {
+              size += 1 + pb::CodedOutputStream.ComputeUInt64Size(Id);
+            }
+            if (PokemonId != 0) {
+              size += 1 + pb::CodedOutputStream.ComputeInt32Size(PokemonId);
+            }
+            return size;
+          }
+
+          public void MergeFrom(Pokemon other) {
+            if (other == null) {
+              return;
+            }
+            if (other.Id != 0UL) {
+              Id = other.Id;
+            }
+            if (other.PokemonId != 0) {
+              PokemonId = other.PokemonId;
+            }
+          }
+
+          public void MergeFrom(pb::CodedInputStream input) {
+            uint tag;
+            while ((tag = input.ReadTag()) != 0) {
+              switch(tag) {
+                default:
+                  input.SkipLastField();
+                  break;
+                case 8: {
+                  Id = input.ReadUInt64();
+                  break;
+                }
+                case 16: {
+                  PokemonId = input.ReadInt32();
+                  break;
+                }
+              }
+            }
+          }
+
+        }
+
+      }
+      #endregion
+
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+    public sealed partial class NearbyPokemonProto : pb::IMessage<NearbyPokemonProto> {
+      private static readonly pb::MessageParser<NearbyPokemonProto> _parser = new pb::MessageParser<NearbyPokemonProto>(() => new NearbyPokemonProto());
+      public static pb::MessageParser<NearbyPokemonProto> Parser { get { return _parser; } }
+
+      public static pbr::MessageDescriptor Descriptor {
+        get { return global::ResponseEnvelop.Descriptor.NestedTypes[9]; }
+      }
+
+      pbr::MessageDescriptor pb::IMessage.Descriptor {
+        get { return Descriptor; }
+      }
+
+      public NearbyPokemonProto() {
+        OnConstruction();
+      }
+
+      partial void OnConstruction();
+
+      public NearbyPokemonProto(NearbyPokemonProto other) : this() {
+        pokedexNumber_ = other.pokedexNumber_;
+        distanceMeters_ = other.distanceMeters_;
+        encounterId_ = other.encounterId_;
+      }
+
+      public NearbyPokemonProto Clone() {
+        return new NearbyPokemonProto(this);
+      }
+
+      /// <summary>Field number for the "PokedexNumber" field.</summary>
+      public const int PokedexNumberFieldNumber = 1;
+      private int pokedexNumber_;
+      public int PokedexNumber {
+        get { return pokedexNumber_; }
+        set {
+          pokedexNumber_ = value;
+        }
+      }
+
+      /// <summary>Field number for the "DistanceMeters" field.</summary>
+      public const int DistanceMetersFieldNumber = 2;
+      private float distanceMeters_;
+      public float DistanceMeters {
+        get { return distanceMeters_; }
+        set {
+          distanceMeters_ = value;
+        }
+      }
+
+      /// <summary>Field number for the "EncounterId" field.</summary>
+      public const int EncounterIdFieldNumber = 3;
+      private ulong encounterId_;
+      public ulong EncounterId {
+        get { return encounterId_; }
+        set {
+          encounterId_ = value;
+        }
+      }
+
+      public override bool Equals(object other) {
+        return Equals(other as NearbyPokemonProto);
+      }
+
+      public bool Equals(NearbyPokemonProto other) {
+        if (ReferenceEquals(other, null)) {
+          return false;
+        }
+        if (ReferenceEquals(other, this)) {
+          return true;
+        }
+        if (PokedexNumber != other.PokedexNumber) return false;
+        if (DistanceMeters != other.DistanceMeters) return false;
+        if (EncounterId != other.EncounterId) return false;
+        return true;
+      }
+
+      public override int GetHashCode() {
+        int hash = 1;
+        if (PokedexNumber != 0) hash ^= PokedexNumber.GetHashCode();
+        if (DistanceMeters != 0F) hash ^= DistanceMeters.GetHashCode();
+        if (EncounterId != 0UL) hash ^= EncounterId.GetHashCode();
+        return hash;
+      }
+
+      public override string ToString() {
+        return pb::JsonFormatter.ToDiagnosticString(this);
+      }
+
+      public void WriteTo(pb::CodedOutputStream output) {
+        if (PokedexNumber != 0) {
+          output.WriteRawTag(8);
+          output.WriteInt32(PokedexNumber);
+        }
+        if (DistanceMeters != 0F) {
+          output.WriteRawTag(21);
+          output.WriteFloat(DistanceMeters);
+        }
+        if (EncounterId != 0UL) {
+          output.WriteRawTag(24);
+          output.WriteUInt64(EncounterId);
+        }
+      }
+
+      public int CalculateSize() {
+        int size = 0;
+        if (PokedexNumber != 0) {
+          size += 1 + pb::CodedOutputStream.ComputeInt32Size(PokedexNumber);
+        }
+        if (DistanceMeters != 0F) {
+          size += 1 + 4;
+        }
+        if (EncounterId != 0UL) {
+          size += 1 + pb::CodedOutputStream.ComputeUInt64Size(EncounterId);
+        }
+        return size;
+      }
+
+      public void MergeFrom(NearbyPokemonProto other) {
+        if (other == null) {
+          return;
+        }
+        if (other.PokedexNumber != 0) {
+          PokedexNumber = other.PokedexNumber;
+        }
+        if (other.DistanceMeters != 0F) {
+          DistanceMeters = other.DistanceMeters;
+        }
+        if (other.EncounterId != 0UL) {
+          EncounterId = other.EncounterId;
+        }
+      }
+
+      public void MergeFrom(pb::CodedInputStream input) {
+        uint tag;
+        while ((tag = input.ReadTag()) != 0) {
+          switch(tag) {
+            default:
+              input.SkipLastField();
+              break;
+            case 8: {
+              PokedexNumber = input.ReadInt32();
+              break;
+            }
+            case 21: {
+              DistanceMeters = input.ReadFloat();
+              break;
+            }
+            case 24: {
+              EncounterId = input.ReadUInt64();
+              break;
+            }
+          }
+        }
+      }
+
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+    public sealed partial class ProfilePayload : pb::IMessage<ProfilePayload> {
+      private static readonly pb::MessageParser<ProfilePayload> _parser = new pb::MessageParser<ProfilePayload>(() => new ProfilePayload());
+      public static pb::MessageParser<ProfilePayload> Parser { get { return _parser; } }
+
+      public static pbr::MessageDescriptor Descriptor {
+        get { return global::ResponseEnvelop.Descriptor.NestedTypes[10]; }
+      }
+
+      pbr::MessageDescriptor pb::IMessage.Descriptor {
+        get { return Descriptor; }
+      }
+
+      public ProfilePayload() {
+        OnConstruction();
+      }
+
+      partial void OnConstruction();
+
+      public ProfilePayload(ProfilePayload other) : this() {
         unknown1_ = other.unknown1_;
         Profile = other.profile_ != null ? other.Profile.Clone() : null;
       }
 
-      public Payload Clone() {
-        return new Payload(this);
+      public ProfilePayload Clone() {
+        return new ProfilePayload(this);
       }
 
       /// <summary>Field number for the "unknown1" field.</summary>
@@ -1857,10 +5644,10 @@ public sealed partial class ResponseEnvelop : pb::IMessage<ResponseEnvelop> {
       }
 
       public override bool Equals(object other) {
-        return Equals(other as Payload);
+        return Equals(other as ProfilePayload);
       }
 
-      public bool Equals(Payload other) {
+      public bool Equals(ProfilePayload other) {
         if (ReferenceEquals(other, null)) {
           return false;
         }
@@ -1905,7 +5692,7 @@ public sealed partial class ResponseEnvelop : pb::IMessage<ResponseEnvelop> {
         return size;
       }
 
-      public void MergeFrom(Payload other) {
+      public void MergeFrom(ProfilePayload other) {
         if (other == null) {
           return;
         }
@@ -1950,7 +5737,7 @@ public sealed partial class ResponseEnvelop : pb::IMessage<ResponseEnvelop> {
       public static pb::MessageParser<Profile> Parser { get { return _parser; } }
 
       public static pbr::MessageDescriptor Descriptor {
-        get { return global::ResponseEnvelop.Descriptor.NestedTypes[3]; }
+        get { return global::ResponseEnvelop.Descriptor.NestedTypes[11]; }
       }
 
       pbr::MessageDescriptor pb::IMessage.Descriptor {

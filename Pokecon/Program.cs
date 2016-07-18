@@ -154,6 +154,149 @@ namespace Pokecon
             }
         }
 
+	    static string raw_heartbeat(string api_endpoint, string access_token, string response)
+	    {
+		    var m4 = new RequestEnvelop();
+		    var m = RequestEnvelop.AltitudeFieldNumber........
+
+			m.f1 = int
+		    (time.time()*1000)
+		    m4.message = m.SerializeToString()
+		    m5 = pokemon_pb2.RequestEnvelop.Requests()
+		    m = pokemon_pb2.RequestEnvelop.MessageSingleString()
+		    m.bytes = "05daf51635c82611d1aac95c0b051d3ec088a930"
+		    m5.message = m.SerializeToString()
+
+		    walk = sorted(getNeighbors())
+
+		    m1 = pokemon_pb2.RequestEnvelop.Requests()
+		    m1.type = 106
+		    m = pokemon_pb2.RequestEnvelop.MessageQuad()
+		    m.f1 = ''.join(map(encode, walk))
+		    m.f2 = "\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000"
+		    m.lat = COORDS_LATITUDE
+		    m.
+		    long =
+		    COORDS_LONGITUDE
+
+		    m1.message = m.SerializeToString()
+
+		    response = get_profile(
+			    access_token,
+			    api_endpoint,
+			    response.unknown7,
+			    m1,
+			    pokemon_pb2.RequestEnvelop.Requests(),
+			    m4,
+			    pokemon_pb2.RequestEnvelop.Requests(),
+			    m5)
+
+		    payload = response.payload[0]
+
+		    heartbeat = pokemon_pb2.ResponseEnvelop.HeartbeatPayload()
+
+		    heartbeat.ParseFromString(payload)
+		    return heartbeat
+	    }
+
+	    def heartbeat(api_endpoint, access_token, response):
+    while True:
+        try:
+            h = raw_heartbeat(api_endpoint, access_token, response)
+            return h
+		except Exception, e:
+            if DEBUG:
+
+				print(e)
+
+			print('[-] Heartbeat missed, retrying')
+
+
+def scan(api_endpoint, access_token, response, origin, pokemons):
+
+	steps = 0
+    steplimit = NUM_STEPS
+	pos = 1
+
+	x   = 0
+    y   = 0
+    dx  = 0
+    dy  = -1
+    while steps<steplimit**2:
+
+		original_lat = FLOAT_LAT
+
+		original_long = FLOAT_LONG
+
+		parent = CellId.from_lat_lng(LatLng.from_degrees(FLOAT_LAT, FLOAT_LONG)).parent(15)
+
+
+		h = heartbeat(api_endpoint, access_token, response)
+
+		hs = [h]
+		seen = set([])
+        for child in parent.children():
+            latlng = LatLng.from_point(Cell(child).get_center())
+
+			set_location_coords(latlng.lat().degrees, latlng.lng().degrees, 0)
+            hs.append(heartbeat(api_endpoint, access_token, response))
+
+		set_location_coords(original_lat, original_long, 0)
+
+
+		visible = []
+
+        for hh in hs:
+            for cell in hh.cells:
+                for wild in cell.WildPokemon:
+                    hash = wild.SpawnPointId + ':' + str(wild.pokemon.PokemonId)
+                    if (hash not in seen):
+                        visible.append(wild)
+                        seen.add(hash)
+
+        for cell in h.cells:
+            if cell.NearbyPokemon:
+                other = LatLng.from_point(Cell(CellId(cell.S2CellId)).get_center())
+                diff = other - origin
+# print(diff)
+				difflat = diff.lat().degrees
+
+				difflng = diff.lng().degrees
+                if len(cell.NearbyPokemon) > 0:
+
+					print('[+] Found pokemon!')
+                for poke in cell.NearbyPokemon:
+
+						print('    (%s) %s' % (poke.PokedexNumber, pokemons[poke.PokedexNumber - 1]['Name']))
+
+        for poke in visible:
+            other = LatLng.from_degrees(poke.Latitude, poke.Longitude)
+            diff = other - origin
+# print(diff)
+			difflat = diff.lat().degrees
+
+			difflng = diff.lng().degrees
+
+			timestamp = int(time.time())
+
+			add_pokemon(poke.pokemon.PokemonId, pokemons[poke.pokemon.PokemonId - 1]['Name'], poke.Latitude, poke.Longitude, timestamp, poke.TimeTillHiddenMs / 1000)
+
+
+		write_data_to_file()
+
+        if (-steplimit/2 < x <= steplimit/2) and(-steplimit/2 < y <= steplimit/2):
+
+			set_location_coords((x* 0.0025) + deflat, (y* 0.0025 ) + deflng, 0)
+        if x == y or(x< 0 and x == -y) or(x > 0 and x == 1-y):
+
+			dx, dy = -dy, dx
+		x, y = x + dx, y+dy
+		  steps +=1
+
+
+		print('[+] Scan: %0.1f %%' % (((steps + (pos* .25) - .25) / steplimit**2) * 100))
+
+
         public class Options
         {
             [ValueArgument(typeof(string), 'u', "username", Description = "PTC Username", Optional = false)]
@@ -207,7 +350,7 @@ namespace Pokecon
             if (profile != null)
             {
                 Console.WriteLine("[+] Login successful");
-                var profile2 = profile.Payload[0].Profile;
+	            var profile2 = profile.Payload[0].Profile;
                 Console.WriteLine("[+] Username: {0}", profile2.Username);
                 var creationTime = FromUnixTime(profile2.CreationTime);
                 Console.WriteLine("[+] You are playing Pokemon Go since: {0}", creationTime);
